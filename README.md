@@ -1,3 +1,3 @@
-# mazemax.github.io
+# Personal website for M.Saad Siddiqui
 
-Website for this github user.
+Created using HTML5, Twitter Bootstrap, Font Awesome.
