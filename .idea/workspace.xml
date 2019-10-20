@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/portfolio/IPG/huddle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/IPG/huddle_app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/REA/squarefoot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/REA/squarefoot_app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/REA/thinkOfLiving.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/portfolio/REA/thinkOfLiving_app.png" afterDir="false" />
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated portfolio and GA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -117,7 +111,8 @@
       <workItem from="1459153077014" duration="10162000" />
       <workItem from="1569344764985" duration="3029000" />
       <workItem from="1571331784297" duration="4288000" />
-      <workItem from="1571540521343" duration="1860000" />
+      <workItem from="1571540521343" duration="2358000" />
+      <workItem from="1571543635486" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -126,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569347123425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated portfolio and GA">
+      <created>1571542730586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571542730586</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated profile picture, CV and competencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated profile picture, CV and competencies" />
+    <MESSAGE value="Updated portfolio and GA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated portfolio and GA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="283" y="36" key="#Web_Browsers" timestamp="1571540580768" />
@@ -159,7 +162,10 @@
     <state x="469" y="105" key="FileChooserDialogImpl/1366.768" timestamp="1571540580770" />
     <state x="161" y="24" key="SettingsEditor" timestamp="1571540580770" />
     <state x="161" y="24" key="SettingsEditor/1366.768" timestamp="1571540580770" />
-    <state x="283" y="111" key="Vcs.Push.Dialog.v2" timestamp="1571540580770" />
+    <state x="283" y="111" key="Vcs.Push.Dialog.v2" timestamp="1571542739817">
+      <screen x="0" y="24" width="1366" height="699" />
+    </state>
+    <state x="283" y="111" key="Vcs.Push.Dialog.v2/0.24.1366.699@0.24.1366.699" timestamp="1571542739817" />
     <state x="283" y="111" key="Vcs.Push.Dialog.v2/1366.768" timestamp="1571540580770" />
     <state x="346" y="44" width="672" height="678" key="search.everywhere.popup" timestamp="1571540580770" />
     <state x="346" y="44" width="672" height="678" key="search.everywhere.popup/1366.768" timestamp="1571540580770" />
