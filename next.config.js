@@ -2,7 +2,7 @@
 // const withExportImages = require('next-export-optimize-images')
 
 const nextConfig = {
-    basePath: '/',
+    basePath: '',
     output: 'export',
     compress: true,
     poweredByHeader: false,

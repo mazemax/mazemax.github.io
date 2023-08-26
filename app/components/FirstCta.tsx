@@ -6,15 +6,24 @@ import Saad from 'public/saad-photo.jpg'
 
 export default function Cta() {
     const emailOnClick = () => {
-        window.location.href = "mailto:to.msaads@gmail.com?subject=Job Opportunity&body=Hey+M.Saad%2C++Reaching+out+to+you+sharing+an+opportunity.";
+        (window as any)?.gtag('event', 'email_click', {
+            event_label: "Email Click"
+        })
+        window.location.href = "mailto:to.msaads@gmail.com?subject=Job Opportunity&body=Hey+M.Saad%2C++Reaching+out+to+you+sharing+an+opportunity."
       }
   
       const phoneOnClick = () => {
-        window.location.href = "tel:+60102440732";
+        (window as any)?.gtag('event', 'phone_click', {
+            event_label: "Phone Click"
+        })
+        window.location.href = "tel:+60102440732"
       }
   
       const whatsappOnClick = () => {
-        window.location.href = "https://api.whatsapp.com/send?phone=60102440732";
+        (window as any)?.gtag('event', 'whatsapp_click', {
+            event_label: "Whatsapp Click"
+        })
+        window.location.href = "https://api.whatsapp.com/send?phone=60102440732"
       }
 
     return (
