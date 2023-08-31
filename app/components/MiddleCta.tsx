@@ -1,6 +1,6 @@
 import { Space, Button, Alert } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
-import { Parallax } from 'rc-scroll-anim'
+import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax'
 
 export default function MiddleCta() {
     const gtmDownloadMiddleClick = () => {
@@ -11,7 +11,7 @@ export default function MiddleCta() {
 
     return (
         <div>
-            <Parallax
+            <ScrollParallax
                 animation={{ x: 0, opacity: 1, playScale: [0.1, 0.5] }}
                 style={{ transform: 'translateX(-100px)', opacity: 0 }}
                 className="code-box-shape"
@@ -37,7 +37,7 @@ export default function MiddleCta() {
                     }
                     className='flex flex-col md:flex-row items-center space-y-4 md:space-y-0'
                     />
-            </Parallax>
+            </ScrollParallax>
         </div>
     )
 }
