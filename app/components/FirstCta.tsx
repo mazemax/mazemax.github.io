@@ -47,6 +47,7 @@ export default function Cta() {
                             key="email" 
                             style={{ color: '#ff931f', fontSize: '32px' }} 
                             onClick={emailOnClick} 
+                            className='hover:scale-150 focus:scale-150 transition-all'
                         />
                         Email
                     </>
@@ -56,6 +57,7 @@ export default function Cta() {
                             key="phone" 
                             style={{ color: '#7a12d4', fontSize: '32px' }} 
                             onClick={phoneOnClick} 
+                            className='hover:scale-150 focus:scale-150 transition-all'
                         />
                         Phone
                     </>
@@ -65,6 +67,7 @@ export default function Cta() {
                             key="whatsapp" 
                             style={{ color: '#25d366', fontSize: '32px' }} 
                             onClick={whatsappOnClick} 
+                            className='hover:scale-150 focus:scale-150 transition-all'
                         />
                         Whatsapp
                     </>
