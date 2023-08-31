@@ -1,8 +1,9 @@
 import { Space, Button, Alert } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax'
+import ScrollAnim from 'rc-scroll-anim/lib'
 
 export default function MiddleCta() {
+    const ScrollParallax = ScrollAnim.Parallax as any
     const gtmDownloadMiddleClick = () => {
         (window as any)?.gtag('event', 'download_middle_click', {
             event_label: "Download Middle Click"
