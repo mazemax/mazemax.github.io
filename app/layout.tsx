@@ -1,9 +1,18 @@
 import 'antd/dist/reset.css'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import { ConfigProvider } from 'antd'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ 
+  weight: '400', 
+  subsets: ['latin'], 
+  display: 'swap',
+  preload: true,
+  fallback: [
+    '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial',
+    'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+  ]
+})
 
 export const metadata = {
   title: 'M.Saad Siddiqui - Full Stack Developer, Senior Software Engineer',
@@ -15,10 +24,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const { style: { fontFamily }, className } = roboto
+
   return (
-    <ConfigProvider>
+    <ConfigProvider
+      theme={{
+        token: {
+          fontFamily: fontFamily
+        }
+      }}
+    >
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={className}>{children}</body>
     </html>
     </ConfigProvider>
   )
