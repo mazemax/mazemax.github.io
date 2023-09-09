@@ -14,7 +14,7 @@ export default function Featured() {
                 <iframe width="600" height="550" 
                         className='w-full h-40 sm:h-60 md:h-96 lg:h-126 rounded-lg'
                         src="https://www.youtube.com/embed/h-pMCZcC7s4?start=68" 
-                        title="Saad featured by Storyblok" 
+                        title="Max featured by Storyblok" 
                         frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowFullScreen>

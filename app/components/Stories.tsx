@@ -14,7 +14,7 @@ export default function Stories() {
     return (
         <>
             <Typography.Title level={2} className='m-0 text-center font-bold leading-0'>
-              <MessageTwoTone /> What people say about Saad
+              <MessageTwoTone /> What people say about Max
             </Typography.Title>
 
             <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>

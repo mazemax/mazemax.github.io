@@ -22,7 +22,7 @@ export default function PunchLines() {
     return (
         <>
             <Typography.Title level={5} className='m-0 text-left leading-0'>
-                M.Saad Siddiqui
+                Max Saad
             </Typography.Title>
             <Typography.Title level={2} className='m-0 text-left font-bold leading-0' style={{marginTop: 0}}>
                 Hire a competent<br/>

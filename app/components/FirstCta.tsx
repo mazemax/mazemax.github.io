@@ -38,7 +38,7 @@ export default function Cta() {
                         height={300}
                         loading="eager" 
                         placeholder="blur"
-                        alt="Saad picture"
+                        alt="Max Saad picture"
                     />
                 }
                 actions={[

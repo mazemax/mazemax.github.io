@@ -1,5 +1,5 @@
 import 'antd/dist/reset.css'
-import './globals.css'
+import '../globals.css'
 import Script from 'next/script'
 import { Roboto } from 'next/font/google'
 import { ConfigProvider } from 'antd'
@@ -16,8 +16,8 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Max Saad - Full Stack Developer, Senior Software Engineer',
-  description: 'Max Saad\'s Portfolio. Skills include NuxtJS, NextJS, JavaScript, NodeJS, Webpack, Storyblok, GCP, CypressJS, PHP, MYSQL, ReactJS.',
+  title: 'Max Blog',
+  description: 'Blog for NuxtJS, NextJS, JavaScript, NodeJS, Webpack, Storyblok, GCP, CypressJS, PHP, MYSQL, ReactJS and anything new.',
 }
 
 export default function RootLayout({

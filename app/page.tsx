@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import Script from 'next/script'
 import React, { useState } from 'react'
 import { Layout, Space, Button, Col, Row, Typography, Menu, Drawer, FloatButton } from 'antd'
 import { Header, Content, Footer } from 'antd/es/layout/layout'
@@ -144,7 +143,7 @@ export default function Home() {
                               href='https://drive.google.com/file/d/10Ud0OdwO4HfLPGMcS0tlickbUq3v3ICY/view?usp=sharing' 
                               target='_blank' />
                 <FloatButton icon={<LinkedinOutlined />} tooltip='Visit LinkedIn'
-                              href='https://www.linkedin.com/in/msaadsiddiqui'
+                              href='https://www.linkedin.com/in/maxsaad'
                               target='_blank' />
                 <FloatButton icon={<GithubOutlined />} tooltip='Visit Github'
                               href='https://github.com/mazemax'
@@ -226,7 +225,7 @@ export default function Home() {
           <Footer className='bg-white text-slate-600 drop-shadow text-center'>
             <Row justify="center" align="middle">
                 <Col className='w-full'>
-                  <a href="https://www.linkedin.com/in/msaadsiddiqui/">
+                  <a href="https://www.linkedin.com/in/maxsaad/">
                     <LinkedinOutlined style={{marginRight: '10px', fontSize: '40px'}} />
                   </a>
                   
@@ -238,18 +237,6 @@ export default function Home() {
           </Footer>
         </Layout>
       </Space>
-
-      { /* Google tag (gtag.js) */ }
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-KW3LN92T8H" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-KW3LN92T8H');
-        `}
-      </Script>
       </div>
     )
   } catch(e) {
