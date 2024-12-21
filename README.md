@@ -1,30 +1,118 @@
-Max's professional website
-==========
+# Personal Website
 
-Created using Next.js, Antd and TailwindCSS.
+This repository contains the source code for my personal website built using [Next.js](https://nextjs.org/). The site showcases my portfolio, and other personal projects.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [License](#license)
+
+---
+
+## Features
+
+- **Portfolio**: A showcase of my projects and skills.
+- **Responsive Design**: Optimized for all devices.
+- **Fast and SEO-Friendly**: Built with Next.js and Tailwind CSS.
+- **Optimized Images**: Uses `next/image` for efficient image loading.
+- **Custom UI Components**: Tailored for a unique user experience.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-yarn dev
+- [Node.js](https://nodejs.org/) (v22 or higher)
+- [Yarn](https://yarnpkg.com/) (preferred package manager)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   yarn install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   yarn dev
+   ```
+
+4. Open your browser and visit: `http://localhost:3000`
+
+---
+
+## Project Structure
+
+```plaintext
+.
+├── app/                # Main application files
+│   ├── blog/           # Blog-related pages
+│   ├── components/     # Core UI components
+│   ├── data/           # Static data used across the app
+│   ├── globals.css     # Global styles
+│   ├── hooks/          # Custom React hooks
+│   ├── layout.tsx      # Layout component
+│   ├── page.tsx        # Main page file
+│   ├── styles/         # Additional styles
+├── components/ui/      # Reusable UI components
+├── lib/utils.ts        # Utility functions
+├── public/             # Static assets (images, icons, etc.)
+├── out/                # Exported static files (after build)
+├── unity/              # Unity WebGL builds
+├── next.config.js      # Next.js configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+├── package.json        # Project metadata and scripts
+├── yarn.lock           # Dependency lockfile
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-## Deploy on Github page
+## Scripts
 
-To deploy this app use the relevant Github action.
+- **`yarn dev`**: Starts the development server.
+- **`yarn build`**: Builds the application for production.
+- **`yarn start`**: Runs the built application.
+- **`yarn lint`**: Lints the codebase.
+- **`yarn deploy`**: Deploys the site as GitHub page.
 
-## Licence
+---
 
-The MIT License
+## Dependencies
 
-Copyright (c) 2023 Max Saad
+Key dependencies used in this project:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+- **Next.js**: Framework for building React applications.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **TypeScript**: Typed JavaScript for better development experience.
+- **React Icons**: Icon library for React.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+For a full list of dependencies, check the [`package.json`](package.json) file.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use it as a reference or template for your own projects.
+
+---
+
+## Author
+
+Developed and maintained by [Max Saad](http://mazemax.github.io).
+
+Feel free to reach out via email or connect with me on [LinkedIn](https://www.linkedin.com/in/maxsaad).
