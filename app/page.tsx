@@ -1,28 +1,31 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { Layout, Space, Button, Col, Row, Typography, Menu, Drawer, FloatButton } from 'antd'
-import { Header, Content, Footer } from 'antd/es/layout/layout'
+import React, { useState, useRef } from 'react'
+import { Layout, Space, Button, Col, Row, Menu, Drawer, FloatButton } from 'antd'
+import { Header, Content } from 'antd/es/layout/layout'
 import { 
   PhoneTwoTone, CarTwoTone, MessageTwoTone, ShopTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
   SafetyCertificateTwoTone, ContactsTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined
 } from '@ant-design/icons'
-import Expertise from './components/Expertise'
-import Proficiency from './components/Proficiency'
-import PunchLines from './components/PunchLines'
-import FirstCta from './components/FirstCta'
-import MiddleCta from './components/MiddleCta'
 import Portfolio from './components/Portfolio'
-import Experience from './components/Experience'
-import Stories from './components/Stories'
 import Featured from './components/Featured'
-import Teams from './components/Teams'
+import HeroSection from './components/HeroSection'
+import MySkills from './components/MySkills'
+import ProfessionalExperienceTimeline from './components/ProfessionalExperienceTimeline'
+import CTASection from './components/CTASection'
+import TestimonialsSection from './components/TestimonialsSection'
+import TeamPhotosSection from './components/TeamPhotosSection'
+import Footer from './components/Footer'
+
+import './styles/hero-section.css'
+import './styles/work-screenshots.css'
 
 export default function Home() {
   try {
     const [open, setOpen] = useState(false)
+      const viewPortfolioRef = useRef(null)
 
-    const showDrawer = () => {
+      const showDrawer = () => {
       setOpen(true)
     }
 
@@ -41,52 +44,9 @@ export default function Home() {
       >
         <Layout>
           <Header className='flex items-center leading-4 ps-12 pe-12 h-16 bg-white text-slate-600 drop-shadow' 
-                  style={{position: 'sticky', top: 0, zIndex: 1, width: '100%', display: 'flex', alignItems: 'center',}}>
+                  style={{top: 0, zIndex: 1, width: '100%', display: 'flex', alignItems: 'center',}}>
             <Row justify="center" align="middle" className='w-full'>
-              <Col className='w-full hidden lg:block'>
-                <Menu
-                  mode="horizontal"
-                  theme='light'
-                  className='border-none'
-                >
-                  <Menu.Item key="1">
-                      <PhoneTwoTone twoToneColor="#7a12d4" />
-                      <span>Contact</span>
-                      <Link href="#contact" />
-                  </Menu.Item>
-                  <Menu.Item key="2">
-                      <SafetyCertificateTwoTone twoToneColor="#faac16" />
-                      <span>Featured</span>
-                      <Link href="#featured" />
-                  </Menu.Item>
-                  <Menu.Item key="3">
-                      <ShopTwoTone twoToneColor="#cf0000" />
-                      <span>Work</span>
-                      <Link href="#portfolio" />
-                  </Menu.Item>
-                  <Menu.Item key="4">
-                      <CodeTwoTone twoToneColor="#b0b0b0" />
-                      <span>Skills</span>
-                      <Link href="#skills" />
-                  </Menu.Item>
-                  <Menu.Item key="5">
-                      <CarTwoTone twoToneColor="#ff931f" />
-                      <span>Experience</span>
-                      <Link href="#experience" />
-                  </Menu.Item>
-                  <Menu.Item key="6">
-                      <MessageTwoTone />
-                      <span>Testimonials</span>
-                      <Link href="#stories" />
-                  </Menu.Item>
-                  <Menu.Item key="7">
-                      <ContactsTwoTone twoToneColor="#25d366" />
-                      <span>Team Photos</span>
-                      <Link href="#teams" />
-                  </Menu.Item>
-                </Menu>
-              </Col>
-              <Col className='w-full block lg:hidden'>
+              <Col className='w-full'>
                 <Button type="default" onClick={showDrawer} icon={open ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}>
                 </Button>
                 <Drawer title="Main Menu" placement="left" onClose={onClose} open={open}>
@@ -107,7 +67,7 @@ export default function Home() {
                     </Menu.Item>
                     <Menu.Item key="3">
                         <ShopTwoTone twoToneColor="#cf0000" />
-                        <span>Work</span>
+                        <span>Portfolio</span>
                         <Link href="#portfolio" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="4">
@@ -123,7 +83,7 @@ export default function Home() {
                     <Menu.Item key="6">
                         <MessageTwoTone />
                         <span>Testimonials</span>
-                        <Link href="#stories" onClick={onClose} />
+                        <Link href="#testimonials" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="7">
                         <ContactsTwoTone twoToneColor="#25d366" />
@@ -151,90 +111,54 @@ export default function Home() {
                 <FloatButton.BackTop visibilityHeight={0} tooltip='Back to Top' />
               </FloatButton.Group>
 
-              <Content style={{ padding: '0 24px', minHeight: 280 }}>
+              <Content style={{ padding: '0 0', minHeight: 280 }}>
                 <span id="contact"></span>
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col span={8} xs={20} sm={18} md={10} lg={10} xl={8}>
-                    <PunchLines />
-                  </Col>
-                  <Col span={8} xs={20} sm={18} md={10} lg={10} xl={8}>
-                    <FirstCta />
-                  </Col>
+                <Row justify="center" align="middle" className='mt-2.5 mb-10'>
                   <span id="featured"></span>
+                  <HeroSection portfolioRef={viewPortfolioRef} />
                 </Row>
                 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
+                <Row justify="center" align="middle" className='mt-2.5 mb-10'>
                     <Featured />
                     <span id="portfolio"></span>
-                  </Col>
                 </Row>
                 
                 <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
-                    <Portfolio />
+                    <Portfolio ref={viewPortfolioRef} />
                     <span id="skills"></span>
-                  </Col>
-                </Row>
-                
-                <Row gutter={24} justify="center" align="bottom" className='mt-2.5'>
-                  <Typography.Title level={2} className='m-0 text-center font-bold leading-0'>
-                    <CodeTwoTone twoToneColor="#b0b0b0" /> My Skills
-                  </Typography.Title>
-                </Row>
-                <Row gutter={24} justify="center" align="top" className='mb-10'>
-                  <Col span={8} xs={20} sm={18} md={16} lg={10} xl={8}>
-                    <Expertise />
-                  </Col>
-                  <Col span={8} xs={20} sm={18} md={16} lg={10} xl={8}>
-                    <Proficiency />
-                  </Col>
                 </Row>
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
-                    <MiddleCta />
-                  </Col>
-                  <span id="experience"></span>
+
+                  <Row gutter={24} justify="center" align="middle" className='mt-2.5'>
+                      <MySkills/>
+                      <span id="experience"></span>
+                  </Row>
+
+                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-10 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
+                    <ProfessionalExperienceTimeline />
+                  <span id="cta"></span>
                 </Row>
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
-                    <Experience />
-                  </Col>
-                  <span id="stories"></span>
+                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-2.5 bg-gradient-to-br from-[#FF3CAC] via-[#FF8A00] to-[#6A0DAD]'>
+                    <CTASection />
+                    <span id="testimonials"></span>
                 </Row>
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
-                    <Stories />
-                  </Col>
-                  <span id="teams"></span>
-                </Row>
+                 <div className='bg-white'>
+                    <TestimonialsSection />
+                    <span id="teams"></span>
+                 </div>
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <Col xs={20} sm={18} md={20} lg={20} xl={16}>
-                    <Teams />
-                  </Col>
-                </Row>
+                 <div>
+                    <TeamPhotosSection />
+                 </div>
                 
               </Content>
             </Layout>
           </Content>
 
-          <Footer className='bg-white text-slate-600 drop-shadow text-center'>
-            <Row justify="center" align="middle">
-                <Col className='w-full'>
-                  <a href="https://www.linkedin.com/in/maxsaad/">
-                    <LinkedinOutlined style={{marginRight: '10px', fontSize: '40px'}} />
-                  </a>
-                  
-                  <a href="https://github.com/mazemax">
-                    <GithubOutlined style={{fontSize: '40px'}} />
-                  </a>
-                </Col>
-            </Row>
-          </Footer>
+          <Footer />
+
         </Layout>
       </Space>
       </div>

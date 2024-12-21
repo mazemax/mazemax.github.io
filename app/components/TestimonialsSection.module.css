@@ -1,0 +1,13 @@
+.testimonialSwiper :global(.swiper-button-next),
+.testimonialSwiper :global(.swiper-button-prev) {
+    color: #333;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.testimonialSwiper :global(.swiper-button-next:after),
+.testimonialSwiper :global(.swiper-button-prev:after) {
+    font-size: 20px;
+}

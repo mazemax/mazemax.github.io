@@ -1,26 +1,26 @@
-import React from 'react'
-import { Typography, Col, Row } from 'antd'
-import { SafetyCertificateTwoTone } from '@ant-design/icons'
+'use client'
 
 export default function Featured() {
     return (
-        <>
-            <Typography.Title level={2} className='m-0 text-center font-bold leading-0'>
-                <SafetyCertificateTwoTone twoToneColor="#faac16" /> Featured In
-            </Typography.Title>
+        <section className="w-full bg-gradient-to-b from-gray-50 to-white">
+            <div className="container mx-auto px-4 py-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 font-sans">
+                    Discover My Journey with Industry Leaders
+                </h2>
+                <p className="text-lg md:text-xl text-gray-600 text-center mb-5">
+                    Featured in exclusive interview and success story
+                </p>
 
-            <Row gutter={24} justify="center" align="middle">
-              <Col span={8} xs={24} sm={24} md={24} lg={24} xl={24}>
-                <iframe width="600" height="550" 
-                        className='w-full h-40 sm:h-60 md:h-96 lg:h-126 rounded-lg'
-                        src="https://www.youtube.com/embed/h-pMCZcC7s4?start=68" 
-                        title="Max featured by Storyblok" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowFullScreen>
-                </iframe>
-              </Col>
-            </Row>
-        </>
+                <div className="flex justify-center">
+                    <iframe
+                        className="w-full lg:w-7/12 h-[250px] lg:h-[500px] rounded-xl shadow-lg"
+                        src={`https://www.youtube.com/embed/h-pMCZcC7s4`}
+                        title="Max's Interview with Storyblok"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </div>
+        </section>
     )
 }

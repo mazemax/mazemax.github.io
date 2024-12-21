@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated portfolio and GA">
-      <change afterPath="$PROJECT_DIR$/Saad_CV_2020_V3.0.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Version 4">
+      <change afterPath="$PROJECT_DIR$/app/components/CTASection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HuggingFaceIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/MySkills.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ProfessionalExperienceTimeline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/TeamPhotosSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/TimelineItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/data/skills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useParallax.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/hero-section.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/work-screenshots.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/accordion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/org/mindvalley_logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/org/rea_group_logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/mv-free-courses-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/spirituality-program-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/workway.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/teams/mindvalley-team-bbq.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Experience.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Expertise.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/FirstCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_FirstCta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MiddleCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_MiddleCta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Proficiency.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PunchLines.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Teams.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,30 +64,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mazemax"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mazemax/mazemax.github.io.git",
+    "accountId": "9069cb43-3a1f-4c58-b9c3-9db3e5b35018"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="1RIBWmtWlV959k9kFAW61lw6YZw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="settings.editor.splitter.proportion" value="0.26641294" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/maxsaad/Desktop/mazemax.github.io/public/teams",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/maxsaad/Desktop/mazemax.github.io/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/teams" />
       <recent name="$PROJECT_DIR$/img/portfolio/REA" />
       <recent name="$PROJECT_DIR$/img/portfolio/IPG" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/portfolio/Mindvalley" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,6 +152,15 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
+        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -108,6 +183,7 @@
       <workItem from="1571540521343" duration="2358000" />
       <workItem from="1571543635486" duration="100000" />
       <workItem from="1590949375254" duration="100000" />
+      <workItem from="1734190893150" duration="87724000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -127,7 +203,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -140,29 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated profile picture, CV and competencies" />
     <MESSAGE value="Updated portfolio and GA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated portfolio and GA" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="283" y="36" key="#Web_Browsers" timestamp="1571540580768" />
-    <state x="283" y="36" key="#Web_Browsers/1366.768" timestamp="1571540580770" />
-    <state x="372" y="179" width="617" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1571541247004">
-      <screen x="0" y="24" width="1366" height="699" />
-    </state>
-    <state x="372" y="179" width="617" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1366.699@0.24.1366.699" timestamp="1571541247004" />
-    <state x="110" y="124" width="1144" height="499" maximized="true" key="DiffContextDialog" timestamp="1571540644559">
-      <screen x="0" y="24" width="1366" height="699" />
-    </state>
-    <state x="110" y="124" width="1144" height="499" maximized="true" key="DiffContextDialog/0.24.1366.699@0.24.1366.699" timestamp="1571540644559" />
-    <state x="469" y="105" key="FileChooserDialogImpl" timestamp="1571540580770" />
-    <state x="469" y="105" key="FileChooserDialogImpl/1366.768" timestamp="1571540580770" />
-    <state x="161" y="24" key="SettingsEditor" timestamp="1571540580770" />
-    <state x="161" y="24" key="SettingsEditor/1366.768" timestamp="1571540580770" />
-    <state x="283" y="111" key="Vcs.Push.Dialog.v2" timestamp="1571542739817">
-      <screen x="0" y="24" width="1366" height="699" />
-    </state>
-    <state x="283" y="111" key="Vcs.Push.Dialog.v2/0.24.1366.699@0.24.1366.699" timestamp="1571542739817" />
-    <state x="283" y="111" key="Vcs.Push.Dialog.v2/1366.768" timestamp="1571540580770" />
-    <state x="346" y="44" width="672" height="678" key="search.everywhere.popup" timestamp="1571540580770" />
-    <state x="346" y="44" width="672" height="678" key="search.everywhere.popup/1366.768" timestamp="1571540580770" />
+    <MESSAGE value="Version 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 4" />
   </component>
 </project>
