@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Version 4">
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated Readme file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,7 @@
       <workItem from="1571540521343" duration="2358000" />
       <workItem from="1571543635486" duration="100000" />
       <workItem from="1590949375254" duration="100000" />
-      <workItem from="1734190893150" duration="90083000" />
+      <workItem from="1734190893150" duration="91573000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734787320108</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated Readme file">
+      <option name="closed" value="true" />
+      <created>1734788595343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734788595343</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +199,7 @@
     <MESSAGE value="Updated profile picture, CV and competencies" />
     <MESSAGE value="Updated portfolio and GA" />
     <MESSAGE value="Version 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 4" />
+    <MESSAGE value="Updated Readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme file" />
   </component>
 </project>

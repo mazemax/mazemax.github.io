@@ -16,8 +16,8 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Max Saad - Full Stack Developer, Senior Software Engineer',
-  description: 'Max Saad\'s Portfolio. Skills include NuxtJS, NextJS, JavaScript, NodeJS, Webpack, Storyblok, GCP, CypressJS, PHP, MYSQL, ReactJS.',
+  title: 'Max Saad - Full Stack Developer, AI Solution Engineer',
+  description: 'Max Saad\'s Portfolio. Skills include Generative AI, LLM, Python, ReactJS, NextJS, GraphQL.',
 }
 
 export default function RootLayout({
