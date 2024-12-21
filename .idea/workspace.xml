@@ -5,50 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Version 4">
-      <change afterPath="$PROJECT_DIR$/app/components/CTASection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HeroSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HuggingFaceIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/MySkills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/ProfessionalExperienceTimeline.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/TeamPhotosSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/TimelineItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data/skills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hooks/useParallax.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/hero-section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/styles/work-screenshots.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/org/mindvalley_logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/org/rea_group_logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/mv-free-courses-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/spirituality-program-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/portfolio/Mindvalley/workway.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/teams/mindvalley-team-bbq.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Experience.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Expertise.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/FirstCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_FirstCta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/MiddleCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_MiddleCta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Portfolio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Proficiency.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/PunchLines.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Stories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Teams.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MySkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MySkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +142,7 @@
       <workItem from="1571540521343" duration="2358000" />
       <workItem from="1571543635486" duration="100000" />
       <workItem from="1590949375254" duration="100000" />
-      <workItem from="1734190893150" duration="87724000" />
+      <workItem from="1734190893150" duration="88795000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -199,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1571542730586</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version 4">
+      <option name="closed" value="true" />
+      <created>1734786257356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734786257356</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

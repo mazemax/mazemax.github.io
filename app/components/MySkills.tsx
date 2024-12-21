@@ -23,13 +23,14 @@ export default function MySkills() {
     const technicalSubcategories = ['Artificial Intelligence', 'Frontend', 'Backend', 'Database', 'Mobile', 'Tools', 'Cloud Services']
 
     const renderSkill = (skill: Skill) => {
-        const IconComponent = skill.icon as React.ElementType;
+        const IconComponent = React.createElement(skill.icon, { className: "text-4xl mb-2" });
+
         return (
             <div
                 key={skill.name}
                 className="bg-secondary rounded-lg p-4 flex flex-col items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r from-[#FF8A00] via-[#FF3CAC] to-[#6A0DAD] hover:text-white cursor-pointer"
             >
-                <IconComponent className="text-4xl mb-2" />
+                { IconComponent }
                 <span className="font-semibold text-center">{skill.name}</span>
                 <div className="w-full bg-background/50 h-1 mt-2 rounded-full overflow-hidden">
                     <div
