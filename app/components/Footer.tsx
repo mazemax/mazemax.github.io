@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { linkedinLink, githubLink, whatsAppLink } from '@/app/data/links'
 
 export default function Footer() {
 
@@ -7,7 +8,7 @@ export default function Footer() {
         (window as any)?.gtag('event', 'whatsapp_click', {
             event_label: "Whatsapp Click"
         })
-        window.location.href = "https://api.whatsapp.com/send?phone=60102440732"
+        window.location.href = whatsAppLink
     }
 
     return (
@@ -24,10 +25,10 @@ export default function Footer() {
                 <div>
                     <h4 className="text-lg font-bold mb-4">Connect with Me</h4>
                     <div className="flex space-x-4 mb-4">
-                        <a href="https://www.linkedin.com/in/maxsaad" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href={linkedinLink} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <FaLinkedin className="w-6 h-6 hover:text-[#FF8A00] transition-colors" />
                         </a>
-                        <a href="https://github.com/mazemax" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <FaGithub className="w-6 h-6 hover:text-[#FF3CAC] transition-colors" />
                         </a>
                     </div>

@@ -7,6 +7,7 @@ import { SiLinkedin } from "react-icons/si";
 import Image, {StaticImageData} from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
+import { linkedinLink } from '@/app/data/links'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -114,7 +115,7 @@ export default function TestimonialsSection() {
 
                 <div className="mt-12 text-center">
                     <Button asChild className="bg-[#0077b5] hover:bg-[#005582] text-white">
-                        <a href="https://linkedin.com/in/maxsaad" target="_blank" rel="noopener noreferrer">
+                        <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                             <SiLinkedin className="mr-2 h-4 w-4" />
                             Explore My Full Recommendations
                         </a>

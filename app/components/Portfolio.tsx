@@ -7,6 +7,7 @@ import {Button} from '@/components/ui/button'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Navigation, Pagination, Autoplay} from 'swiper/modules'
 import {Gallery, Item} from 'react-photoswipe-gallery'
+import { resumeLink } from '@/app/data/links'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -82,7 +83,7 @@ const Portfolio = forwardRef<HTMLDivElement, PortfolioProps>((props, ref) => {
         (window as any)?.gtag('event', 'download_middle_click', {
             event_label: "Download Middle Click"
         })
-        window.open('https://drive.google.com/file/d/13d3O7SWfDwRtejnPcUD8fuRkoo597puR/view?usp=sharing', '_blank');
+        window.open(resumeLink, '_blank');
     };
 
     return (

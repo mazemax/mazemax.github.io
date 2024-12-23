@@ -16,6 +16,7 @@ import CTASection from './components/CTASection'
 import TestimonialsSection from './components/TestimonialsSection'
 import TeamPhotosSection from './components/TeamPhotosSection'
 import Footer from './components/Footer'
+import { resumeLink, linkedinLink, githubLink } from './data/links'
 
 import './styles/hero-section.css'
 import './styles/work-screenshots.css'
@@ -100,13 +101,13 @@ export default function Home() {
             <Layout className='py-6 px-0 bg-gray-100'>
               <FloatButton.Group shape="circle" style={{ right: 24 }}>
                 <FloatButton icon={<DownloadOutlined />} tooltip='Download CV'
-                              href='https://drive.google.com/file/d/10Ud0OdwO4HfLPGMcS0tlickbUq3v3ICY/view?usp=sharing' 
+                              href={resumeLink}
                               target='_blank' />
                 <FloatButton icon={<LinkedinOutlined />} tooltip='Visit LinkedIn'
-                              href='https://www.linkedin.com/in/maxsaad'
+                              href={linkedinLink}
                               target='_blank' />
                 <FloatButton icon={<GithubOutlined />} tooltip='Visit Github'
-                              href='https://github.com/mazemax'
+                              href={githubLink}
                               target='_blank' />
                 <FloatButton.BackTop visibilityHeight={0} tooltip='Back to Top' />
               </FloatButton.Group>

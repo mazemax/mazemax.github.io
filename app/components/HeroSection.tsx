@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {useParallax} from '../hooks/useParallax'
 import {Button} from '@/components/ui/button'
 import {ArrowRight} from 'lucide-react'
+import { whatsAppLink } from '@/app/data/links'
 import Saad from 'public/saad-photo.jpg'
 import MVLogo from 'public/org/mindvalley_logo.jpeg'
 import REALogo from 'public/org/rea_group_logo.jpeg'
@@ -21,7 +22,7 @@ export default function HeroSection({portfolioRef}: HeroSectionProps) {
         (window as any)?.gtag('event', 'whatsapp_click', {
             event_label: "Whatsapp Click"
         })
-        window.location.href = "https://api.whatsapp.com/send?phone=60102440732"
+        window.location.href = whatsAppLink
     }
 
     const portfolioButtonClick = (e: { preventDefault: () => void }) => {

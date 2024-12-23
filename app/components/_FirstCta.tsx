@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Card, Tag } from 'antd'
 import Meta from 'antd/es/card/Meta'
+import { whatsAppLink } from '@/app/data/links'
 import { MailOutlined, PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons'
 import Saad from 'public/saad-photo.jpg'
 
@@ -23,7 +24,7 @@ export default function Cta() {
         (window as any)?.gtag('event', 'whatsapp_click', {
             event_label: "Whatsapp Click"
         })
-        window.location.href = "https://api.whatsapp.com/send?phone=60102440732"
+        window.location.href = whatsAppLink
       }
 
     return (

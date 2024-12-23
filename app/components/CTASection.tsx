@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Check } from 'lucide-react';
+import { Download, Check } from 'lucide-react'
+import { resumeLink } from '@/app/data/links';
 
 const CTASection = () => {
     const [timeLeft, setTimeLeft] = useState(24 * 60 * 60); // 24-hour countdown
@@ -40,7 +41,7 @@ const CTASection = () => {
         (window as any)?.gtag('event', 'download_cta_click', {
             event_label: "Download CTA Click"
         })
-        window.open('https://drive.google.com/file/d/13d3O7SWfDwRtejnPcUD8fuRkoo597puR/view?usp=sharing', '_blank');
+        window.open(resumeLink, '_blank');
     };
 
     return (

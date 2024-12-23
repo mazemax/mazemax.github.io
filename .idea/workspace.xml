@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated Readme file">
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated meta tags">
+      <change afterPath="$PROJECT_DIR$/app/data/links.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CTASection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CTASection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/_FirstCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_FirstCta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +148,7 @@
       <workItem from="1571540521343" duration="2358000" />
       <workItem from="1571543635486" duration="100000" />
       <workItem from="1590949375254" duration="100000" />
-      <workItem from="1734190893150" duration="91573000" />
+      <workItem from="1734190893150" duration="93644000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -181,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734788595343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated meta tags">
+      <option name="closed" value="true" />
+      <created>1734795034291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734795034291</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +215,7 @@
     <MESSAGE value="Updated portfolio and GA" />
     <MESSAGE value="Version 4" />
     <MESSAGE value="Updated Readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Readme file" />
+    <MESSAGE value="Updated meta tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated meta tags" />
   </component>
 </project>
