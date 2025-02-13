@@ -1,5 +1,5 @@
 import { FaJs, FaReact, FaNode, FaAws, FaDocker, FaSass, FaTrophy, FaUserCog } from 'react-icons/fa';
-import { SiTypescript, SiVuedotjs, SiNuxtdotjs, SiNextdotjs, SiExpress, SiTailwindcss, SiStoryblok, SiWebpack, SiJest, SiCypress, SiGithub, SiGraphql, SiRedux, SiPython, SiPhp, SiStyledcomponents, SiGooglecloud, SiDigitalocean, SiPostgresql, SiMysql, SiElasticsearch, SiMongodb, SiJenkins, SiBuildkite, SiWordpress, SiLaravel, SiSymfony, SiApache, SiEnvoyproxy, SiSencha, SiBootstrap, SiApachecordova, SiAntdesign, SiFigma } from 'react-icons/si';
+import { SiTypescript, SiVuedotjs, SiNuxtdotjs, SiNextdotjs, SiExpress, SiTailwindcss, SiStoryblok, SiWebpack, SiJest, SiCypress, SiGithub, SiGraphql, SiRedux, SiPython, SiPhp, SiStyledcomponents, SiGooglecloud, SiDigitalocean, SiPostgresql, SiMysql, SiElasticsearch, SiMongodb, SiJenkins, SiBuildkite, SiWordpress, SiLaravel, SiSymfony, SiApache, SiEnvoyproxy, SiSencha, SiBootstrap, SiApachecordova, SiAntdesign, SiFigma, SiLangchain, SiOpenai } from 'react-icons/si';
 import { MdOutlineCrisisAlert, MdOutlineEmojiEmotions } from "react-icons/md";
 import { GiTeamUpgrade, GiPuzzle, GiRead } from 'react-icons/gi';
 import { BiMessageRoundedDetail } from 'react-icons/bi';
@@ -24,8 +24,11 @@ export interface Skill {
 export const skills: Skill[] = [
     { name: 'Hugging Face', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: HuggingFaceIcon },
     { name: 'Python', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiPython },
-    { name: 'Chatbot', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: FaRobot },
+    { name: 'AI Agent', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: FaRobot },
     { name: 'RAG', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: GrDocumentStore },
+    { name: 'LangGraph', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiLangchain },
+    { name: 'LangChain', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiLangchain },
+    { name: 'OpenAI', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiOpenai },
 
     { name: 'JavaScript', category: 'technical', subcategory: 'Frontend', proficiency: 100, icon: FaJs },
     { name: 'TypeScript', category: 'technical', subcategory: 'Frontend', proficiency: 80, icon: SiTypescript },
