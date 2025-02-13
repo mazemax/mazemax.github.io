@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Updated meta tags">
-      <change afterPath="$PROJECT_DIR$/app/data/links.ts" afterDir="false" />
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="AI skills update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CTASection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CTASection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Portfolio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/_FirstCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/_FirstCta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,42 +21,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mazemax"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mazemax&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mazemax/mazemax.github.io.git",
-    "accountId": "9069cb43-3a1f-4c58-b9c3-9db3e5b35018"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mazemax/mazemax.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;9069cb43-3a1f-4c58-b9c3-9db3e5b35018&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="1RIBWmtWlV959k9kFAW61lw6YZw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/maxsaad/Desktop/mazemax.github.io/public/teams",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/maxsaad/Desktop/mazemax.github.io/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maxsaad/Desktop/mazemax.github.io/public/teams&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/maxsaad/Desktop/mazemax.github.io/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/teams" />
@@ -120,8 +112,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
-        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.233" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.233" />
       </set>
     </attachedChunks>
   </component>
@@ -148,7 +140,8 @@
       <workItem from="1571540521343" duration="2358000" />
       <workItem from="1571543635486" duration="100000" />
       <workItem from="1590949375254" duration="100000" />
-      <workItem from="1734190893150" duration="93644000" />
+      <workItem from="1734190893150" duration="99796000" />
+      <workItem from="1739456609738" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -196,7 +189,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734795034291</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated CTA links">
+      <option name="closed" value="true" />
+      <created>1734925977414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734925977414</updated>
+    </task>
+    <task id="LOCAL-00008" summary="AI skills update">
+      <option name="closed" value="true" />
+      <created>1739461502231</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739461502231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +225,8 @@
     <MESSAGE value="Version 4" />
     <MESSAGE value="Updated Readme file" />
     <MESSAGE value="Updated meta tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated meta tags" />
+    <MESSAGE value="Updated CTA links" />
+    <MESSAGE value="AI skills update" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI skills update" />
   </component>
 </project>
