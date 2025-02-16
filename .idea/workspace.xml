@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="AI skills update">
+    <list default="true" id="cbcbfb89-0204-47fd-a1f0-85286dd879ef" name="Default" comment="Upgraded actions/deploy-pages">
+      <change afterPath="$PROJECT_DIR$/app/components/HackathonAIInnovations.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/styles/my-skills-section.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/expert-icons/huggingface.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hackathon-ai/event-derivai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hackathon-ai/event-derivai2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hackathon-ai/hackathon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hackathon-ai/pixurance-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hackathon-ai/sentiment-sense.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/placeholder.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MySkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MySkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/skills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/skills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +56,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maxsaad/Desktop/mazemax.github.io/public/teams&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/maxsaad/Desktop/mazemax.github.io/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/maxsaad/Desktop/mazemax.github.io/app/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/maxsaad/Desktop/mazemax.github.io/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
       <recent name="$PROJECT_DIR$/public/teams" />
       <recent name="$PROJECT_DIR$/img/portfolio/REA" />
       <recent name="$PROJECT_DIR$/img/portfolio/IPG" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/hackathon" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/portfolio/Mindvalley" />
     </key>
   </component>
@@ -142,6 +160,8 @@
       <workItem from="1590949375254" duration="100000" />
       <workItem from="1734190893150" duration="99796000" />
       <workItem from="1739456609738" duration="3509000" />
+      <workItem from="1739462472081" duration="1267000" />
+      <workItem from="1739642370160" duration="13538000" />
     </task>
     <task id="LOCAL-00001" summary="Updated profile picture, CV and competencies">
       <created>1569347123425</created>
@@ -205,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739461502231</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Upgraded actions/upload-pages-artifact">
+      <option name="closed" value="true" />
+      <created>1739462598534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739462598534</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Upgraded actions/deploy-pages">
+      <option name="closed" value="true" />
+      <created>1739463105003</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739463105003</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +263,8 @@
     <MESSAGE value="Updated meta tags" />
     <MESSAGE value="Updated CTA links" />
     <MESSAGE value="AI skills update" />
-    <option name="LAST_COMMIT_MESSAGE" value="AI skills update" />
+    <MESSAGE value="Upgraded actions/upload-pages-artifact" />
+    <MESSAGE value="Upgraded actions/deploy-pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraded actions/deploy-pages" />
   </component>
 </project>

@@ -28,7 +28,7 @@ export default function MySkills() {
         return (
             <div
                 key={skill.name}
-                className="bg-secondary rounded-lg p-4 flex flex-col items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r from-[#FF8A00] via-[#FF3CAC] to-[#6A0DAD] hover:text-white cursor-pointer"
+                className="skill bg-secondary border rounded-lg p-4 flex flex-col items-center justify-center transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r from-[#FF8A00] via-[#FF3CAC] to-[#6A0DAD] hover:text-white cursor-pointer"
             >
                 { IconComponent }
                 <span className="font-semibold text-center">{skill.name}</span>
@@ -46,7 +46,7 @@ export default function MySkills() {
         <Accordion type="single" defaultValue="Artificial Intelligence" collapsible className="w-full">
             {technicalSubcategories.map((subcategory) => (
                 <AccordionItem value={subcategory} key={subcategory}>
-                    <AccordionTrigger className='text-sm'>{subcategory}</AccordionTrigger>
+                    <AccordionTrigger className='text-sm hover:text-[#FF3CAC]'>{subcategory}</AccordionTrigger>
                     <AccordionContent>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                             {filteredSkills
@@ -60,7 +60,7 @@ export default function MySkills() {
     )
 
     return (
-        <section className="w-full bg-gradient-to-b from-gray-50 to-white">
+        <section className="w-full">
             <div className="container mx-auto px-4 py-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                     Skills Overview
@@ -78,12 +78,12 @@ export default function MySkills() {
                 />
 
                 <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as typeof activeTab)}>
-                    <TabsList className="grid w-full grid-cols-3">
-                        <TabsTrigger key={`${stableId}-technical`} value="technical">Technical Skills</TabsTrigger>
-                        <TabsTrigger key={`${stableId}-soft`} value="soft">Soft Skills</TabsTrigger>
-                        <TabsTrigger key={`${stableId}-certifications`} value="certifications">Certifications</TabsTrigger>
+                    <TabsList className="grid w-full grid-cols-3 shadow-lg border">
+                        <TabsTrigger key={`${stableId}-technical`} value="technical" className="hover:text-[#FF3CAC]" >Technical Skills</TabsTrigger>
+                        <TabsTrigger key={`${stableId}-soft`} className="hover:text-[#FF3CAC]" value="soft">Soft Skills</TabsTrigger>
+                        <TabsTrigger key={`${stableId}-certifications`} className="hover:text-[#FF3CAC]" value="certifications">Certifications</TabsTrigger>
                     </TabsList>
-                    <TabsContent key={`${stableId}-content-technical`} value="technical" className="mt-4">
+                    <TabsContent key={`${stableId}-content-technical`} value="technical" className="border rounded-md p-4">
                         {renderTechnicalSkills()}
                     </TabsContent>
                     <TabsContent key={`${stableId}-content-soft`} value="soft" className="mt-4">

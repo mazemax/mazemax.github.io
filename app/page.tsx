@@ -5,9 +5,11 @@ import { Layout, Space, Button, Col, Row, Menu, Drawer, FloatButton } from 'antd
 import { Header, Content } from 'antd/es/layout/layout'
 import { 
   PhoneTwoTone, CarTwoTone, MessageTwoTone, ShopTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
-  SafetyCertificateTwoTone, ContactsTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined
+  SafetyCertificateTwoTone, ContactsTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined,
+  LaptopOutlined
 } from '@ant-design/icons'
 import Portfolio from './components/Portfolio'
+import HackathonAIInnovations from './components/HackathonAIInnovations'
 import Featured from './components/Featured'
 import HeroSection from './components/HeroSection'
 import MySkills from './components/MySkills'
@@ -20,6 +22,7 @@ import { resumeLink, linkedinLink, githubLink } from './data/links'
 
 import './styles/hero-section.css'
 import './styles/work-screenshots.css'
+import './styles/my-skills-section.css'
 
 export default function Home() {
   try {
@@ -67,26 +70,31 @@ export default function Home() {
                         <Link href="#featured" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="3">
+                        <LaptopOutlined twoToneColor="#000000" />
+                        <span>Hackathon & AI</span>
+                        <Link href="#hackathon" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="4">
                         <ShopTwoTone twoToneColor="#cf0000" />
                         <span>Portfolio</span>
                         <Link href="#portfolio" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="4">
+                    <Menu.Item key="5">
                         <CodeTwoTone twoToneColor="#b0b0b0" />
                         <span>Skills</span>
                         <Link href="#skills" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="5">
+                    <Menu.Item key="6">
                         <CarTwoTone twoToneColor="#ff931f" />
                         <span>Experience</span>
                         <Link href="#experience" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="6">
+                    <Menu.Item key="7">
                         <MessageTwoTone />
                         <span>Testimonials</span>
                         <Link href="#testimonials" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="7">
+                    <Menu.Item key="8">
                         <ContactsTwoTone twoToneColor="#25d366" />
                         <span>Team Photos</span>
                         <Link href="#teams" onClick={onClose} />
@@ -121,21 +129,25 @@ export default function Home() {
                 
                 <Row justify="center" align="middle" className='mt-2.5 mb-10'>
                     <Featured />
+                    <span id="hackathon"></span>
+                </Row>
+
+                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
+                    <HackathonAIInnovations />
                     <span id="portfolio"></span>
                 </Row>
-                
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
+
+                <Row gutter={24} justify="center" align="middle">
                     <Portfolio ref={viewPortfolioRef} />
                     <span id="skills"></span>
                 </Row>
-
 
                   <Row gutter={24} justify="center" align="middle" className='mt-2.5'>
                       <MySkills/>
                       <span id="experience"></span>
                   </Row>
 
-                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-10 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
+                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-10 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white'>
                     <ProfessionalExperienceTimeline />
                   <span id="cta"></span>
                 </Row>

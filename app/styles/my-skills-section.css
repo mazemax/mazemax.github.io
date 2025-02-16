@@ -1,0 +1,4 @@
+.skill:hover > div > div {
+    --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
+    --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}

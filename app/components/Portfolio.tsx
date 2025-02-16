@@ -87,7 +87,7 @@ const Portfolio = forwardRef<HTMLDivElement, PortfolioProps>((props, ref) => {
     };
 
     return (
-        <section className="w-full" ref={ref}>
+        <section className="w-full bg-gradient-to-b from-gray-50 to-white pt-10 pb-10" ref={ref}>
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Explore Notable Projects</h2>
                 <p className="text-lg md:text-xl text-gray-600 text-center mb-5">A showcase of my technical expertise in
