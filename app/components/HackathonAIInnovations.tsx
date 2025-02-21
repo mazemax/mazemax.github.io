@@ -14,10 +14,19 @@ import derivAIHack from 'public/hackathon-ai/event-derivai.png'
 import derivAIHack2 from 'public/hackathon-ai/event-derivai2.png'
 import pixuranceLogo from 'public/hackathon-ai/pixurance-logo.png'
 import huggingfaceIcon from 'public/expert-icons/huggingface.svg'
+import lovableHackathon from 'public/hackathon-ai/lovable-hackathon.avif'
 
 const HackathonAIInnovations = () => {
 
     const hackathons = [
+        {
+            name: "Worldwide Hackathon by lovable",
+            year: "2025",
+            image: lovableHackathon,
+            badge: "Participant",
+            description: "Created a collaborative research platform CortexBook using Lovable",
+            projectLink: "https://cortexbook.lovable.app",
+        },
         {
             name: "Deriv AI Hackathon",
             year: "2025",
