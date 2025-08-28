@@ -52,8 +52,8 @@ export default function Footer() {
                 <div>
                     <div className="bg-white/10 p-4 rounded-lg">
                         <p className="mb-2">Latest from LinkedIn:</p>
-                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7261771130410024962"
-                                width="100%" height="200" className="border-none" title="Embedded post"></iframe>
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361349067970408448?collapsed=1" 
+                                height="200" width="100%" className="border-none" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                     </div>
                     <br/>
                     <p className="text-sm">

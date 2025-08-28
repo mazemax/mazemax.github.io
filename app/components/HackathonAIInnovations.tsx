@@ -15,10 +15,27 @@ import derivAIHack2 from 'public/hackathon-ai/event-derivai2.png'
 import pixuranceLogo from 'public/hackathon-ai/pixurance-logo.png'
 import huggingfaceIcon from 'public/expert-icons/huggingface.svg'
 import lovableHackathon from 'public/hackathon-ai/lovable-hackathon.avif'
+import mohHackathon from 'public/hackathon-ai/moh-hackathon-png-vWx9.png'
 
 const HackathonAIInnovations = () => {
 
     const hackathons = [
+        {
+            name: "AAIMS25 AI Code Fest - Healthcare Reimagined",
+            year: "2025",
+            image: mohHackathon,
+            badge: "Participant",
+            description: "MediBuddy AI assists doctors and patients with smarter scheduling and follow-ups",
+            projectLink: "https://ai-healthcare-xi.vercel.app",
+        },
+        {
+            name: "Google Chrome Built-in AI Challenge",
+            year: "2025",
+            image: 'https://developer.chrome.com/static/blog/ai-challenge/image/cover.jpg',
+            badge: "Participant",
+            description: "Developed QuickDraw game using multimodal Gemini nano model",
+            projectLink: "#",
+        },
         {
             name: "Worldwide Hackathon by lovable",
             year: "2025",

@@ -25,7 +25,7 @@ export default function Blog() {
             <Layout className='py-6 px-0 bg-gray-100'>
               <FloatButton.Group shape="circle" style={{ right: 24 }}>
                 <FloatButton icon={<DownloadOutlined />} tooltip='Download CV'
-                              href='https://drive.google.com/file/d/10Ud0OdwO4HfLPGMcS0tlickbUq3v3ICY/view?usp=sharing' 
+                              href='https://drive.google.com/file/d/1wi0jBbL0N2UxLv6pcFKJi8Uipuug9AmI/view' 
                               target='_blank' />
                 <FloatButton icon={<LinkedinOutlined />} tooltip='Visit LinkedIn'
                               href='https://www.linkedin.com/in/msaadsiddiqui'
