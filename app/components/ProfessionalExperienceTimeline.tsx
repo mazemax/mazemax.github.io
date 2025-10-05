@@ -16,14 +16,15 @@ const experiences: Experience[] = [
         startDate: '2021',
         endDate: 'Present',
         company: 'Mindvalley Labs',
-        role: 'Senior Frontend Developer',
+        role: 'Senior Full Stack Engineer',
         responsibilities: [
-            'Engineering Lead at Acquisition team',
-            'Full stack development for mindvalley.com',
-            'Migrated to Nuxt v2.15 and Nuxt Bridge',
-            'Executed up to 5 initiatives in parallel',
-            'Helped marketing team make $19M+ sales',
-            'Played vital role in terminating various legacy apps',
+            'Created 10+ AI Agents to improve productivity of tech team',
+            'Led initiatives enabling $19M+ sales, aligning technical solutions with marketing objectives',
+            'Delivered high-impact solutions using Headless Storyblok CMS and Nuxt.js',
+            'Spearheaded the Evercoach & MV Coach merge, documenting architecture challenges',
+            'Migrated project to Nuxt v2.15 and Nuxt Bridge to enhance maintainability and performance',
+            'Managed up to 5 parallel initiatives to deliver key deliverables on time',
+            'Collaborated with marketing and product teams to streamline workflows',
         ]
     },
     {
@@ -33,12 +34,11 @@ const experiences: Experience[] = [
         company: 'iProperty REA Group Asia',
         role: 'Senior Developer',
         responsibilities: [
-            'Full stack development for Squarefoot, iProperty and ThinkOfLiving',
-            'Participated in Optimize October Regional Web Initiative',
-            'Migrated React app to functional components (Hooks)',
-            'Migrated Apollo Server V1 to V2',
-            'Migrated Next.js V6 to V8 for Squarefoot Lifestyle',
-            'Developed BigQuery to MYSQL location data sync service'
+            'Improved web application performance by upgrading Next.js v6 to v8 and Apollo Server',
+            'Migrated React projects to functional components with Hooks',
+            'Developed BigQuery - MySQL data sync service ensuring real-time location accuracy',
+            'Enhanced core functionalities for Squarefoot and iProperty platforms, improving user experience',
+            'Participated in Optimize October Regional Web Initiative'
         ]
     },
     {
@@ -48,9 +48,9 @@ const experiences: Experience[] = [
         company: 'IPG Mediabrands',
         role: 'Software Analyst',
         responsibilities: [
-            'Rewritten 95% of Huddle (custom content portal) to serve 1000+ users',
-            'Wrote many micro-services over AWS',
-            'Upgraded PHP, Symfony and Webpack'
+            'Overhauled 95% of a legacy codebase for a content portal, serving 1,000+ active users',
+            'Built scalable microservices architecture on AWS, improving performance and reliability',
+            'Modernized platforms with tools like Symfony, Docker, and Webpack for robust solutions'
         ]
     },
     {
@@ -60,8 +60,8 @@ const experiences: Experience[] = [
         company: 'Litmus Labs',
         role: 'Senior Software Engineer',
         responsibilities: [
-            'Integrated TBOHolidays, Hotelbeds and Travelport APIs in Momvaz Travel app',
-            'Magento2 theme customization for Petrichor Jackets Ecommerce app'
+            'Developed Momvaz Travel application by integrating APIs like TBOHolidays and Travelport',
+            'Customized and optimized Magento2 themes for large-scale eCommerce deployments'
         ]
     },
     {
@@ -71,11 +71,10 @@ const experiences: Experience[] = [
         company: 'Geekunit',
         role: 'Chief Information Officer',
         responsibilities: [
-            'Executed four projects',
-            'Performed DevOps tasks',
-            'Trained and mentored all developers',
-            'Published iOS and Android mobile apps',
-            'Dived into on-page SEO, financial and HR aspects'
+            'Executed 4 major projects while introducing modern DevOps practices and leading development teams',
+            'Mentored developers and managed end-to-end project lifecycles, delivering high-quality solutions',
+            'Published iOS and Android mobile applications',
+            'Managed technical, financial and HR operations as executive leader'
         ]
     },
     {

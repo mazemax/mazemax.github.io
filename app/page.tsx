@@ -11,10 +11,11 @@ import {
 import Portfolio from './components/Portfolio'
 import HackathonAIInnovations from './components/HackathonAIInnovations'
 import Featured from './components/Featured'
-import HeroSection from './components/HeroSection'
+import HeroSectionNew from './components/HeroSectionNew'
 import MySkills from './components/MySkills'
 import ProfessionalExperienceTimeline from './components/ProfessionalExperienceTimeline'
-import CTASection from './components/CTASection'
+import AchievementsSection from './components/AchievementsSection'
+import EnhancedCTASection from './components/EnhancedCTASection'
 import TestimonialsSection from './components/TestimonialsSection'
 import TeamPhotosSection from './components/TeamPhotosSection'
 import Footer from './components/Footer'
@@ -90,11 +91,16 @@ export default function Home() {
                         <Link href="#experience" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="7">
+                        <SafetyCertificateTwoTone twoToneColor="#10B981" />
+                        <span>Awards & Certifications</span>
+                        <Link href="#achievements" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="8">
                         <MessageTwoTone />
                         <span>Testimonials</span>
                         <Link href="#testimonials" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="8">
+                    <Menu.Item key="9">
                         <ContactsTwoTone twoToneColor="#25d366" />
                         <span>Team Photos</span>
                         <Link href="#teams" onClick={onClose} />
@@ -124,7 +130,7 @@ export default function Home() {
                 <span id="contact"></span>
                 <Row justify="center" align="middle" className='mt-2.5 mb-10'>
                   <span id="featured"></span>
-                  <HeroSection portfolioRef={viewPortfolioRef} />
+                  <HeroSectionNew portfolioRef={viewPortfolioRef} />
                 </Row>
                 
                 <Row justify="center" align="middle" className='mt-2.5 mb-10'>
@@ -149,11 +155,16 @@ export default function Home() {
 
                 <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-10 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white'>
                     <ProfessionalExperienceTimeline />
+                  <span id="achievements"></span>
+                </Row>
+
+                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
+                    <AchievementsSection />
                   <span id="cta"></span>
                 </Row>
 
-                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-2.5 bg-gradient-to-br from-[#FF3CAC] via-[#FF8A00] to-[#6A0DAD]'>
-                    <CTASection />
+                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-2.5 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800'>
+                    <EnhancedCTASection />
                     <span id="testimonials"></span>
                 </Row>
 
