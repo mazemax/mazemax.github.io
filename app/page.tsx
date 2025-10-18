@@ -26,9 +26,10 @@ import './styles/work-screenshots.css'
 import './styles/my-skills-section.css'
 
 export default function Home() {
+  const [open, setOpen] = useState(false)
+  const viewPortfolioRef = useRef(null)
+
   try {
-    const [open, setOpen] = useState(false)
-      const viewPortfolioRef = useRef(null)
 
       const showDrawer = () => {
       setOpen(true)

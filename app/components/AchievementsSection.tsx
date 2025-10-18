@@ -148,7 +148,7 @@ export default function AchievementsSection() {
                             Ready to leverage award-winning AI expertise?
                         </h4>
                         <p className="text-lg mb-6 opacity-90">
-                            Let's discuss how these proven skills can drive results for your project
+                            Let&apos;s discuss how these proven skills can drive results for your project
                         </p>
                         <Button 
                             variant="secondary" 
