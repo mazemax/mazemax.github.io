@@ -426,7 +426,7 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use it a
 **Max Saad** - AI Solutions Engineer  
 [Website](https://mazemax.github.io) • [LinkedIn](https://www.linkedin.com/in/maxsaad) • [GitHub](https://github.com/mazemax)
 
-Helping enterprises generate $19M+ revenue with AI solutions. Award-winning engineer with 10+ years of experience in full-stack development and AI implementation.
+Helping enterprises generate $19M+ revenue with AI solutions. Award-winning engineer with 12+ years of experience in full-stack development and AI implementation.
 
 ---
 

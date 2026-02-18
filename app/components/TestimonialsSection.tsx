@@ -23,6 +23,9 @@ import Prosper from 'public/stories/prosper.jpg'
 import Sarah from 'public/stories/sarah.jpg'
 import Haikal from 'public/stories/haikal.jpg'
 import Kianyang from 'public/stories/kianyang.jpg'
+import Tariq from 'public/stories/tariq.jpg'
+import Jawad from 'public/stories/jawad.jpg'
+import MinDee from 'public/stories/mindee.jpg'
 
 interface Testimonial {
     id: number
@@ -38,6 +41,36 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         id: 1,
+        text: "Saad is a reliable & intelligent individual, with an excellent understanding of software engineering! As a team member or a leader, Saad earns my highest recommendation.",
+        author: "Tariq Rasheed",
+        title: "Associate Director, Software Engineering",
+        company: "KINESSO",
+        image: Tariq,
+        linkedinUrl: "https://www.linkedin.com/in/tarikrasheed",
+        highlight: "Earns my highest recommendation"
+    },
+    {
+        id: 2,
+        text: "It's rare that you come across talent like Saad. I have been working with him for more or less a year now and I was particularly impressed by Saad's ability to adopt new technologies and deliver solutions. I find him very competent specially on front-end frameworks like react and angular. I think Saad would be an asset to any team he works with.",
+        author: "Jawad Irfan",
+        title: "Associate Director, Data Engineering",
+        company: "KINESSO",
+        image: Jawad,
+        linkedinUrl: "https://www.linkedin.com/in/jawadirfan",
+        highlight: "Ability to adopt new technologies and deliver solutions"
+    },
+    {
+        id: 3,
+        text: "Working in the same team as Saad, I find him good at problem solving and very passionate to improve on the current codebase with the latest technology. He is not afraid to pick up new projects and proactively guides and conduct knowledge sharing sessions to uplift the skillset of the team.",
+        author: "Min Dee Yap",
+        title: "Technical Lead",
+        company: "PropertyGuru Group",
+        image: MinDee,
+        linkedinUrl: "https://www.linkedin.com/in/mindeeyap",
+        highlight: "Proactively guides and conducts knowledge sharing sessions"
+    },
+    {
+        id: 4,
         text: "Saad is an amazing TechLead, colleague and friend. He is very thorough and never compromises on delivering high quality work. The most amazing part is even though he is driven, thorough, super effective, he also genuinely cares for the wellbeing of others and sees the best in everyone around him. He is also very patient in teaching and coaching and never withholds anything which promotes others growth.",
         author: "Prosper Chiduku",
         title: "Software Engineer",
@@ -47,7 +80,7 @@ const testimonials: Testimonial[] = [
         highlight: "Never compromises on delivering high quality work"
     },
     {
-        id: 2,
+        id: 5,
         text: "I have a pleasure working with Saad when he was still with REA Group Asia. Saad is very passionate, brave and meticulous in his work. He is able to work independently and fast. Among his strongest area is React.js, to name a few. Saad also is keen on R&D and working on latest stuff. He is never short of coaching, reviewing and sharing knowledge with team member, making him a great person you want in a team.",
         author: "Sarah Khalisa",
         title: "Delivery Lead",
@@ -57,7 +90,7 @@ const testimonials: Testimonial[] = [
         highlight: "Able to work independently and fast"
     },
     {
-        id: 3,
+        id: 6,
         text: "Saad was a technically gifted developer. He has deep knowledge and researches a topic very well. A go-to person when I have technical questions. On a personal level, Saad is a great colleague and always enjoyed our conversations together.",
         author: "Haikal Aris",
         title: "Business Analyst",
@@ -67,7 +100,7 @@ const testimonials: Testimonial[] = [
         highlight: "A go-to person for technical questions"
     },
     {
-        id: 4,
+        id: 7,
         text: "Saad is passionate about technology and was a great contributor to the many teams in our engineering teams. I've worked on several projects with him and he shows dedication in using the latest technology, libraries or techniques in his work.",
         author: "Kian Yang Low",
         title: "Tech Lead",
@@ -94,7 +127,7 @@ export default function TestimonialsSection() {
                         What Leaders Say About My Work
                     </TextAnimate>
                     <p className="text-lg md:text-xl text-gray-600 text-center mb-12">
-                        Stories of collaboration, trust, and impactful results from <span className="font-semibold text-purple-600">Delivery Leads, Tech Leads, and Business Analysts</span>.
+                        Stories of collaboration, trust, and impactful results from <span className="font-semibold text-purple-600">Engineering Leaders, Tech Leads, and Data Leaders</span>.
                     </p>
                 </BlurFade>
 
@@ -104,21 +137,8 @@ export default function TestimonialsSection() {
                         <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-600 rounded-lg p-8 shadow-lg">
                             <Quote className="w-10 h-10 text-purple-600 mb-4" />
                             <blockquote className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-                                "Never compromises on delivering high quality work... able to work independently and fast."
+                                &ldquo;Saad earns my highest recommendation... ability to adopt new technologies and deliver solutions.&rdquo;
                             </blockquote>
-                            <div className="flex items-center">
-                                <Image
-                                    src={Sarah}
-                                    alt="Sarah Khalisa"
-                                    width={40}
-                                    height={40}
-                                    className="rounded-full mr-3"
-                                />
-                                <div>
-                                    <p className="font-semibold text-gray-800">Sarah Khalisa</p>
-                                    <p className="text-sm text-gray-600">Delivery Lead, iProperty REA</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </BlurFade>

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { Award, Calendar, ArrowRight, Sparkles, Zap, Code2 } from 'lucide-react'
+import { Award, Calendar, ArrowRight, Sparkles, Zap, Code2, Eye } from 'lucide-react'
 import { calendlyLink } from '@/app/data/links'
 import { WordRotate } from '@/components/ui/word-rotate'
 import { NumberTicker } from '@/components/ui/number-ticker'
@@ -27,7 +27,7 @@ interface HeroSectionProps {
 const statCards = [
     { icon: Zap, value: 10, suffix: '+', label: 'AI Solutions', color: 'from-purple-500 to-violet-600' },
     { icon: Sparkles, value: 19, prefix: '$', suffix: 'M+', label: 'Revenue Driven', color: 'from-orange-500 to-amber-500' },
-    { icon: Code2, value: 10, suffix: '+', label: 'Years Experience', color: 'from-blue-500 to-cyan-500' },
+    { icon: Code2, value: 12, suffix: '+', label: 'Years Experience', color: 'from-blue-500 to-cyan-500' },
 ]
 
 const logos = [
@@ -89,13 +89,12 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
                     <div className="lg:col-span-3 text-center lg:text-left">
                         <BlurFade delay={0.1} duration={0.5} inView={true} inViewMargin="-50px">
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                                <span className="text-gray-900">I Help Enterprises Generate </span>
                                 <SparklesText
                                     className="text-4xl md:text-5xl lg:text-6xl"
                                     colors={{ first: "#9333ea", second: "#f97316" }}
                                     sparklesCount={6}
                                 >
-                                    $19M+ Revenue
+                                    I Help Enterprises Generate Revenue
                                 </SparklesText>
                                 <br />
                                 <span className="text-gray-900">with AI Solutions</span>
@@ -139,6 +138,7 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
                                 <InteractiveHoverButton
                                     className="text-lg px-8 py-4 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 rounded-xl"
                                     onClick={portfolioButtonClick}
+                                    icon={Eye}
                                 >
                                     View Case Studies
                                 </InteractiveHoverButton>
@@ -213,7 +213,7 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
                                     </div>
 
                                     <div className="absolute top-1/2 -right-6 bg-gradient-to-r from-purple-600 to-orange-500 rounded-xl shadow-lg px-3 py-1.5 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
-                                        <span className="text-xs font-bold text-white">10+ Years</span>
+                                        <span className="text-xs font-bold text-white">12+ Years</span>
                                     </div>
                                 </div>
                             </div>
