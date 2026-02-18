@@ -1,12 +1,12 @@
 'use client'
 import Link from 'next/link'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Layout, Space, Button, Col, Row, Menu, Drawer, FloatButton } from 'antd'
 import { Header, Content } from 'antd/es/layout/layout'
 import { 
-  PhoneTwoTone, CarTwoTone, MessageTwoTone, ShopTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
-  SafetyCertificateTwoTone, ContactsTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined,
-  LaptopOutlined
+  PhoneTwoTone, ShopTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
+  CarTwoTone, MessageTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined,
+  BulbOutlined, CalendarOutlined, TrophyOutlined, StarOutlined, RocketOutlined, ToolOutlined
 } from '@ant-design/icons'
 import Portfolio from './components/Portfolio'
 import HackathonAIInnovations from './components/HackathonAIInnovations'
@@ -17,9 +17,10 @@ import ProfessionalExperienceTimeline from './components/ProfessionalExperienceT
 import AchievementsSection from './components/AchievementsSection'
 import EnhancedCTASection from './components/EnhancedCTASection'
 import TestimonialsSection from './components/TestimonialsSection'
-import TeamPhotosSection from './components/TeamPhotosSection'
+import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
-import { resumeLink, linkedinLink, githubLink } from './data/links'
+import { resumeLink, linkedinLink, githubLink, calendlyLink } from './data/links'
+import { ScrollProgress } from '@/components/ui/scroll-progress'
 
 import './styles/hero-section.css'
 import './styles/work-screenshots.css'
@@ -27,7 +28,18 @@ import './styles/my-skills-section.css'
 
 export default function Home() {
   const [open, setOpen] = useState(false)
+  const [showHeaderCTA, setShowHeaderCTA] = useState(false)
   const viewPortfolioRef = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show CTA button after scrolling past 80vh (approximately after hero)
+      setShowHeaderCTA(window.scrollY > window.innerHeight * 0.8)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   try {
 
@@ -39,8 +51,18 @@ export default function Home() {
       setOpen(false)
     }
 
+    const handleHeaderCTAClick = () => {
+      (window as any)?.gtag('event', 'header_cta_click', {
+        event_label: "Book Call - Sticky Header"
+      })
+      window.open(calendlyLink, '_blank')
+    }
+
     return (
       <div>
+        {/* Scroll Progress Bar */}
+        <ScrollProgress className="fixed top-0 left-0 right-0 z-50 h-1 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600" />
+        
         <Space
         direction="vertical"
         style={{
@@ -50,9 +72,9 @@ export default function Home() {
       >
         <Layout>
           <Header className='flex items-center leading-4 ps-12 pe-12 h-16 bg-white text-slate-600 drop-shadow' 
-                  style={{top: 0, zIndex: 1, width: '100%', display: 'flex', alignItems: 'center',}}>
-            <Row justify="center" align="middle" className='w-full'>
-              <Col className='w-full'>
+                  style={{top: 0, zIndex: 40, width: '100%', display: 'flex', alignItems: 'center',}}>
+            <Row justify="space-between" align="middle" className='w-full'>
+              <Col>
                 <Button type="default" onClick={showDrawer} icon={open ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}>
                 </Button>
                 <Drawer title="Main Menu" placement="left" onClose={onClose} open={open}>
@@ -67,53 +89,71 @@ export default function Home() {
                         <Link href="#contact" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="2">
-                        <SafetyCertificateTwoTone twoToneColor="#faac16" />
+                        <ShopTwoTone twoToneColor="#cf0000" />
+                        <span>Case Studies</span>
+                        <Link href="#portfolio" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="3">
+                        <StarOutlined />
                         <span>Featured</span>
                         <Link href="#featured" onClick={onClose} />
                     </Menu.Item>
-                    <Menu.Item key="3">
-                        <LaptopOutlined twoToneColor="#000000" />
-                        <span>Hackathon & AI</span>
-                        <Link href="#hackathon" onClick={onClose} />
-                    </Menu.Item>
                     <Menu.Item key="4">
-                        <ShopTwoTone twoToneColor="#cf0000" />
-                        <span>Portfolio</span>
-                        <Link href="#portfolio" onClick={onClose} />
-                    </Menu.Item>
-                    <Menu.Item key="5">
-                        <CodeTwoTone twoToneColor="#b0b0b0" />
-                        <span>Skills</span>
-                        <Link href="#skills" onClick={onClose} />
-                    </Menu.Item>
-                    <Menu.Item key="6">
-                        <CarTwoTone twoToneColor="#ff931f" />
-                        <span>Experience</span>
-                        <Link href="#experience" onClick={onClose} />
-                    </Menu.Item>
-                    <Menu.Item key="7">
-                        <SafetyCertificateTwoTone twoToneColor="#10B981" />
-                        <span>Awards & Certifications</span>
-                        <Link href="#achievements" onClick={onClose} />
-                    </Menu.Item>
-                    <Menu.Item key="8">
                         <MessageTwoTone />
                         <span>Testimonials</span>
                         <Link href="#testimonials" onClick={onClose} />
                     </Menu.Item>
+                    <Menu.Item key="5">
+                        <BulbOutlined />
+                        <span>Services</span>
+                        <Link href="#services" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="6">
+                        <TrophyOutlined />
+                        <span>Achievements</span>
+                        <Link href="#achievements" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="7">
+                        <CarTwoTone twoToneColor="#ff931f" />
+                        <span>Experience</span>
+                        <Link href="#experience" onClick={onClose} />
+                    </Menu.Item>
+                    <Menu.Item key="8">
+                        <ToolOutlined />
+                        <span>Skills</span>
+                        <Link href="#skills" onClick={onClose} />
+                    </Menu.Item>
                     <Menu.Item key="9">
-                        <ContactsTwoTone twoToneColor="#25d366" />
-                        <span>Team Photos</span>
-                        <Link href="#teams" onClick={onClose} />
+                        <RocketOutlined />
+                        <span>Hackathon & AI</span>
+                        <Link href="#hackathon" onClick={onClose} />
                     </Menu.Item>
                   </Menu>
                 </Drawer>
               </Col>
+              <Col>
+                {showHeaderCTA && (
+                  <Button 
+                    type="primary" 
+                    size="large"
+                    icon={<CalendarOutlined />}
+                    onClick={handleHeaderCTAClick}
+                    className="font-semibold"
+                    style={{
+                      background: 'linear-gradient(135deg, #9333ea 0%, #f97316 100%)',
+                      borderColor: 'transparent',
+                      boxShadow: '0 4px 12px rgba(147, 51, 234, 0.3)',
+                    }}
+                  >
+                    Book a Call
+                  </Button>
+                )}
+              </Col>
             </Row>
           </Header>
 
-          <Content className='bg-gray-100 text-center min-h-full leading-4'>
-            <Layout className='py-6 px-0 bg-gray-100'>
+          <Content className='bg-white text-center min-h-full leading-4'>
+            <Layout className='py-0 px-0 bg-white'>
               <FloatButton.Group shape="circle" style={{ right: 24 }}>
                 <FloatButton icon={<DownloadOutlined />} tooltip='Download CV'
                               href={resumeLink}
@@ -128,55 +168,45 @@ export default function Home() {
               </FloatButton.Group>
 
               <Content style={{ padding: '0 0', minHeight: 280 }}>
+                {/* Hero Section */}
                 <span id="contact"></span>
-                <Row justify="center" align="middle" className='mt-2.5 mb-10'>
-                  <span id="featured"></span>
-                  <HeroSectionNew portfolioRef={viewPortfolioRef} />
-                </Row>
+                <HeroSectionNew portfolioRef={viewPortfolioRef} />
                 
-                <Row justify="center" align="middle" className='mt-2.5 mb-10'>
-                    <Featured />
-                    <span id="hackathon"></span>
-                </Row>
+                {/* Portfolio/Case Studies Section - MOVED UP to #2 for immediate proof */}
+                <span id="portfolio"></span>
+                <Portfolio ref={viewPortfolioRef} />
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                    <HackathonAIInnovations />
-                    <span id="portfolio"></span>
-                </Row>
+                {/* Featured Video - MOVED UP to #3 for third-party credibility */}
+                <span id="featured"></span>
+                <Featured />
 
-                <Row gutter={24} justify="center" align="middle">
-                    <Portfolio ref={viewPortfolioRef} />
-                    <span id="skills"></span>
-                </Row>
+                {/* Testimonials Section - MOVED to #4 after proof is shown */}
+                <span id="testimonials"></span>
+                <TestimonialsSection />
 
-                  <Row gutter={24} justify="center" align="middle" className='mt-2.5'>
-                      <MySkills/>
-                      <span id="experience"></span>
-                  </Row>
+                {/* Services Section - MOVED DOWN to #5 after trust is built */}
+                <span id="services"></span>
+                <ServicesSection />
 
-                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-10 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white'>
-                    <ProfessionalExperienceTimeline />
-                  <span id="achievements"></span>
-                </Row>
+                {/* Awards & Certifications - Authority boost at #6 */}
+                <span id="achievements"></span>
+                <AchievementsSection />
 
-                <Row gutter={24} justify="center" align="middle" className='mt-2.5 mb-10'>
-                    <AchievementsSection />
-                  <span id="cta"></span>
-                </Row>
+                {/* CTA Section - MOVED UP to #7 for peak conversion moment */}
+                <span id="cta"></span>
+                <EnhancedCTASection />
 
-                <Row gutter={24} justify="center" align="middle" className='pt-2.5 pb-2.5 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800'>
-                    <EnhancedCTASection />
-                    <span id="testimonials"></span>
-                </Row>
+                {/* Experience Timeline - Depth content for researchers */}
+                <span id="experience"></span>
+                <ProfessionalExperienceTimeline />
 
-                 <div className='bg-white'>
-                    <TestimonialsSection />
-                    <span id="teams"></span>
-                 </div>
+                {/* Skills Section - Technical reference material */}
+                <span id="skills"></span>
+                <MySkills/>
 
-                 <div>
-                    <TeamPhotosSection />
-                 </div>
+                {/* Hackathon & AI Innovations - Innovation showcase */}
+                <span id="hackathon"></span>
+                <HackathonAIInnovations />
                 
               </Content>
             </Layout>

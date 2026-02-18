@@ -99,7 +99,9 @@ const HackathonAIInnovations = () => {
     };
 
     return (
-        <section className="w-full">
+        <section className="w-full bg-white py-16 lg:py-20 border-t border-gray-200/60 relative">
+            {/* Gradient transition to dark CTA section below */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-gray-900/10 to-gray-900/30 pointer-events-none" />
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Hackathon & AI Innovations</h2>
                 <p className="text-lg md:text-xl text-gray-600 text-center mb-5">
