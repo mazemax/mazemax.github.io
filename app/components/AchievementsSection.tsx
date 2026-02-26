@@ -8,9 +8,8 @@ import { Button } from '@/components/ui/button'
 import { ExternalLink, Calendar, Trophy, FileCheck, Award } from 'lucide-react'
 import { MagicCard } from '@/components/ui/magic-card'
 import { BlurFade } from '@/components/ui/blur-fade'
-import { AuroraText } from '@/components/ui/aurora-text'
 import { AnimatedShinyText } from '@/components/ui/animated-shiny-text'
-import { NumberTicker } from '@/components/ui/number-ticker'
+import { TextAnimate } from '@/components/ui/text-animate'
 import { NeonGradientCard } from '@/components/ui/neon-gradient-card'
 import { BorderBeam } from '@/components/ui/border-beam'
 import { Meteors } from '@/components/ui/meteors'
@@ -213,41 +212,20 @@ export default function AchievementsSection() {
     const otherHackathons = hackathons.filter(h => h.position !== '1st Place')
 
     return (
-        <section className="py-16 lg:py-20 px-4 bg-slate-50 w-full border-t border-gray-200/60">
+        <section className="py-16 lg:py-20 px-8 md:px-16 bg-white w-full border-t border-gray-200/60">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <BlurFade delay={0.1} duration={0.5} inView={true} inViewMargin="-100px">
-                    <div className="text-center mb-8">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                            <AuroraText 
-                                colors={["#FFD700", "#FF8A00", "#9E7AFF", "#FE8BBB"]}
-                                speed={1}
-                            >
-                                Awards & Certifications
-                            </AuroraText>
-                        </h2>
-                        <AnimatedShinyText className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            Recognition for excellence in AI development and continuous learning in cutting-edge technologies
-                        </AnimatedShinyText>
-                    </div>
-                </BlurFade>
-
-                {/* Stats Row */}
-                <BlurFade delay={0.15} duration={0.5} inView={true} inViewMargin="-100px">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
-                        <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 text-center border border-yellow-200 shadow-sm">
-                            <div className="text-4xl font-bold text-yellow-600 mb-2">
-                                <NumberTicker value={hackathons.length} />
-                            </div>
-                            <div className="text-sm text-gray-700 font-medium">Hackathon Awards</div>
-                        </div>
-                        <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 text-center border border-purple-200 shadow-sm">
-                            <div className="text-4xl font-bold text-purple-600 mb-2">
-                                <NumberTicker value={certifications.length} />
-                            </div>
-                            <div className="text-sm text-gray-700 font-medium">AI Certifications</div>
-                        </div>
-                    </div>
+                    <TextAnimate
+                        animation="blurInUp"
+                        by="word"
+                        className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4"
+                    >
+                        Awards & Certifications
+                    </TextAnimate>
+                    <p className="text-lg md:text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                        Recognition for excellence in AI development and continuous learning in cutting-edge technologies
+                    </p>
                 </BlurFade>
 
                 {/* Featured 1st Place Hackathon */}
@@ -260,28 +238,6 @@ export default function AchievementsSection() {
                             </div>
                         </BlurFade>
                         <FeaturedHackathonCard achievement={featuredHackathon} />
-                    </div>
-                )}
-
-                {/* Other Hackathons */}
-                {otherHackathons.length > 0 && (
-                    <div className="mb-16">
-                        <BlurFade delay={0.2} duration={0.5} inView={true} inViewMargin="-100px">
-                            <div className="flex items-center gap-3 mb-6">
-                                <Award className="w-8 h-8 text-orange-600" />
-                                <h3 className="text-3xl font-bold text-gray-800">Innovation Awards</h3>
-                            </div>
-                        </BlurFade>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {otherHackathons.map((achievement, index) => (
-                                <StandardAchievementCard 
-                                    key={achievement.id} 
-                                    achievement={achievement} 
-                                    index={index}
-                                    type="hackathon"
-                                />
-                            ))}
-                        </div>
                     </div>
                 )}
 

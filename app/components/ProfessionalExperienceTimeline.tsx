@@ -24,13 +24,12 @@ const experiences: Experience[] = [
         company: 'Mindvalley Labs',
         role: 'Senior Full Stack Engineer',
         responsibilities: [
-            'Created 10+ AI Solutions to improve productivity of tech team',
-            'Led initiatives enabling $19M+ sales, aligning technical solutions with marketing objectives',
+            'Drove $19M+ in annual sales via high-performance web architecture & conversion optimization',
+            'Architected Headless CMS (Storyblok), cutting page-building time by 50%',
+            'Spearheaded LLM-powered features for internal tools & content discovery',
+            'Mentored dev team; implemented Playwright/Jest testing & documented 300+ Storybook components',
             'Delivered high-impact solutions using Headless Storyblok CMS and Nuxt.js',
-            'Spearheaded the Evercoach & MV Coach merge, documenting architecture challenges',
-            'Migrated project to Nuxt v2.15 and Nuxt Bridge to enhance maintainability and performance',
             'Managed up to 5 parallel initiatives to deliver key deliverables on time',
-            'Collaborated with marketing and product teams to streamline workflows',
         ]
     },
     {
