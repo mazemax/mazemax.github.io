@@ -27,7 +27,7 @@ interface HeroSectionProps {
 const statCards = [
     { icon: Zap, value: 10, suffix: '+', label: 'AI Solutions', color: 'from-purple-500 to-violet-600' },
     { icon: Sparkles, value: 19, prefix: '$', suffix: 'M+', label: 'Revenue Driven', color: 'from-orange-500 to-amber-500' },
-    { icon: Code2, value: 12, suffix: '+', label: 'Years Experience', color: 'from-blue-500 to-cyan-500' },
+    { icon: Code2, value: 13, suffix: '+', label: 'Years Experience', color: 'from-blue-500 to-cyan-500' },
 ]
 
 const logos = [
@@ -213,7 +213,7 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
                                     </div>
 
                                     <div className="absolute top-1/2 -right-6 bg-gradient-to-r from-purple-600 to-orange-500 rounded-xl shadow-lg px-3 py-1.5 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
-                                        <span className="text-xs font-bold text-white">12+ Years</span>
+                                        <span className="text-xs font-bold text-white">13+ Years</span>
                                     </div>
                                 </div>
                             </div>

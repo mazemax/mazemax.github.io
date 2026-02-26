@@ -38,6 +38,7 @@ const techIconSlugs = [
     "mongodb", "redis", "docker", "amazonaws", "googlecloud",
     "tailwindcss", "sass", "jest", "cypress", "github", "figma",
     "openai", "langchain", "elasticsearch",
+    "anthropic", "replicate", "fastapi", "supabase", "vercel", "githubactions",
 ]
 
 export default function MySkills() {

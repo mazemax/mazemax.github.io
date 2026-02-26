@@ -139,7 +139,7 @@ export default function ProfessionalExperienceTimeline() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center border border-purple-100 shadow-sm hover:shadow-md transition-shadow">
                             <div className="text-4xl font-bold text-purple-700">
-                                <NumberTicker value={12} />+
+                                <NumberTicker value={13} />+
                             </div>
                             <div className="text-sm text-gray-600 mt-2">Years Experience</div>
                         </div>
