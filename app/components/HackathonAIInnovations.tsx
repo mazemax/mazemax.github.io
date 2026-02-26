@@ -24,6 +24,8 @@ import lovableHackathon from 'public/hackathon-ai/lovable-hackathon.avif'
 import medibudy from 'public/hackathon-ai/medibudy-ai.gif'
 import mohHackathon from 'public/hackathon-ai/moh-hackathon-png-vWx9.png'
 import chromeBuiltinHackathon from 'public/hackathon-ai/chrome-builtin-cover.jpg'
+import derivAiHackathon from 'public/hackathon-ai/event-derivai2.png'
+import derivAiHackathon3 from 'public/hackathon-ai/event_derivhack3.png'
 
 const HackathonAIInnovations = () => {
     const [expandedProject, setExpandedProject] = useState<number | null>(null)
@@ -36,7 +38,7 @@ const HackathonAIInnovations = () => {
         {
             name: "Deriv AI Hackathon",
             year: "2026",
-            image: derivAIHack,
+            image: derivAiHackathon3,
             badge: "Selected for Round 2",
             badgeColor: "bg-gradient-to-r from-amber-500 to-orange-500",
             icon: <FaTrophy className="w-4 h-4" />,
@@ -77,7 +79,7 @@ const HackathonAIInnovations = () => {
         {
             name: "Deriv AI Hackathon",
             year: "2025",
-            image: derivAIHack,
+            image: derivAiHackathon,
             badge: "Participant",
             badgeColor: "bg-pink-500",
             icon: <FaMedal className="w-4 h-4" />,
