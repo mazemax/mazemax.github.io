@@ -64,7 +64,7 @@ export default function Footer() {
     ]
 
     const quickLinks = [
-        { name: 'Case Studies', href: '#portfolio' },
+        { name: 'Hackathon & AI', href: '#hackathon' },
         { name: 'Experience', href: '#experience' },
         { name: 'Testimonials', href: '#testimonials' },
         { name: 'Skills', href: '#skills' },

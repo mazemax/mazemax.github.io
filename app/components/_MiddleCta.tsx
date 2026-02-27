@@ -28,7 +28,7 @@ export default function MiddleCta() {
                                 icon={<DownloadOutlined />} 
                                 size='large' 
                                 className='mx-auto sm:mt-2'
-                                href='https://drive.google.com/file/d/1wi0jBbL0N2UxLv6pcFKJi8Uipuug9AmI/view' 
+                                href='https://drive.google.com/file/d/1eWQYmXeYsUzaOkE1PQKyowtcfEzsL0Ry/view?usp=sharing' 
                                 target='_blank'
                                 onClick={gtmDownloadMiddleClick}
                         >

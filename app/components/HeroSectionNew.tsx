@@ -44,13 +44,14 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
         window.location.href = calendlyLink
     }
 
-    const portfolioButtonClick = (e: { preventDefault: () => void }) => {
+    const hackathonButtonClick = (e: { preventDefault: () => void }) => {
         e.preventDefault();
-        (window as any)?.gtag('event', 'portfolio_click', {
-            event_label: "Portfolio Click - Hero"
+        (window as any)?.gtag('event', 'hackathon_click', {
+            event_label: "Hackathon & AI Click - Hero"
         })
-        if (portfolioRef) {
-            portfolioRef?.current?.scrollIntoView({ behavior: "smooth" })
+        const hackathonSection = document.getElementById('hackathon')
+        if (hackathonSection) {
+            hackathonSection.scrollIntoView({ behavior: "smooth" })
         }
     };
 
@@ -137,10 +138,10 @@ export default function HeroSectionNew({ portfolioRef }: HeroSectionProps) {
 
                                 <InteractiveHoverButton
                                     className="text-lg px-8 py-4 border-2 border-purple-300 text-purple-700 hover:bg-purple-50 rounded-xl"
-                                    onClick={portfolioButtonClick}
-                                    icon={Eye}
+                                    onClick={hackathonButtonClick}
+                                    icon={Zap}
                                 >
-                                    View Case Studies
+                                    Hackathon & AI
                                 </InteractiveHoverButton>
                             </div>
                         </BlurFade>

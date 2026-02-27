@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { Layout, Space, Button, Col, Row, Menu, Drawer, FloatButton } from 'antd'
 import { Header, Content } from 'antd/es/layout/layout'
 import { 
-  PhoneTwoTone, ShopTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
+  PhoneTwoTone, CodeTwoTone, LinkedinOutlined, GithubOutlined, 
   CarTwoTone, MessageTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined,
   BulbOutlined, CalendarOutlined, TrophyOutlined, StarOutlined, RocketOutlined, ToolOutlined
 } from '@ant-design/icons'
@@ -85,11 +85,6 @@ export default function Home() {
                         <PhoneTwoTone twoToneColor="#7a12d4" />
                         <span>Contact</span>
                         <Link href="#contact" onClick={onClose} />
-                    </Menu.Item>
-                    <Menu.Item key="2">
-                        <ShopTwoTone twoToneColor="#cf0000" />
-                        <span>Case Studies</span>
-                        <Link href="#portfolio" onClick={onClose} />
                     </Menu.Item>
                     <Menu.Item key="3">
                         <StarOutlined />
