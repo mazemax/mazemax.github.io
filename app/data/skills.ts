@@ -17,7 +17,8 @@ export interface Skill {
     category: 'technical' | 'soft' | 'certifications';
     subcategory?: 'Artificial Intelligence' | 'Frontend' | 'Backend' | 'Database' | 'Mobile' | 'Tools' | 'Cloud Services';
     proficiency: number;
-    icon: React.ElementType;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    icon: React.ComponentType<any> | any;
 }
 
 export const skills: Skill[] = [
