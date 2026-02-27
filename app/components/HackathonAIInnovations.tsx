@@ -4,7 +4,8 @@ import { useState } from 'react'
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { FaGithub, FaYoutube, FaBook, FaTrophy, FaMedal } from "react-icons/fa"
+import { Github, Play, BookOpen } from "lucide-react"
+import { Trophy, Medal } from "lucide-react"
 import {Button} from '@/components/ui/button'
 import {ArrowRight, Sparkles, ChevronDown, ChevronUp} from 'lucide-react'
 import { resumeLink } from '@/app/data/links'
@@ -41,7 +42,7 @@ const HackathonAIInnovations = () => {
             image: derivAiHackathon3,
             badge: "Selected for Round 2",
             badgeColor: "bg-gradient-to-r from-amber-500 to-orange-500",
-            icon: <FaTrophy className="w-4 h-4" />,
+            icon: <Trophy className="w-4 h-4" />,
             description: "Developed DerivIQ, an AI trading analyst using OpenAI Agents SDK etc.",
             projectLink: "https://v0-deriv-iq.vercel.app",
             isNew: true,
@@ -52,7 +53,7 @@ const HackathonAIInnovations = () => {
             image: mohHackathon,
             badge: "1st Place Winner",
             badgeColor: "bg-gradient-to-r from-yellow-400 to-amber-500",
-            icon: <FaTrophy className="w-4 h-4" />,
+            icon: <Trophy className="w-4 h-4" />,
             description: "Built MediBuddyAI - AI scheduling, follow-ups, and care insights system",
             projectLink: "https://ai-healthcare-xi.vercel.app",
         },
@@ -62,7 +63,7 @@ const HackathonAIInnovations = () => {
             image: chromeBuiltinHackathon,
             badge: "Participant",
             badgeColor: "bg-blue-500",
-            icon: <FaMedal className="w-4 h-4" />,
+            icon: <Medal className="w-4 h-4" />,
             description: "Developed QuickDraw game using multimodal Gemini nano model",
             projectLink: "#",
         },
@@ -72,7 +73,7 @@ const HackathonAIInnovations = () => {
             image: lovableHackathon,
             badge: "Participant",
             badgeColor: "bg-purple-500",
-            icon: <FaMedal className="w-4 h-4" />,
+            icon: <Medal className="w-4 h-4" />,
             description: "Created a collaborative research platform CortexBook using Lovable",
             projectLink: "https://cortexbook.lovable.app",
         },
@@ -82,7 +83,7 @@ const HackathonAIInnovations = () => {
             image: derivAiHackathon,
             badge: "Participant",
             badgeColor: "bg-pink-500",
-            icon: <FaMedal className="w-4 h-4" />,
+            icon: <Medal className="w-4 h-4" />,
             description: "LangGraph and OpenAI based AI-powered social trading app",
             projectLink: "https://drive.google.com/file/d/1HK83KihmAeyletUdB6utxbiyHy1HJv3e/view?usp=sharing",
         },
@@ -92,7 +93,7 @@ const HackathonAIInnovations = () => {
             image: derivAIHack,
             badge: "Top 10 Finalist",
             badgeColor: "bg-gradient-to-r from-cyan-500 to-blue-500",
-            icon: <FaMedal className="w-4 h-4" />,
+            icon: <Medal className="w-4 h-4" />,
             description: "Created an AI-powered social media intelligence platform",
             projectLink: "https://huggingface.co/spaces/maxsi/sentiment-sense",
         },
@@ -242,7 +243,6 @@ const HackathonAIInnovations = () => {
                             <BlurFade key={index} delay={index * 0.15} inView>
                                 <MagicCard 
                                     className="p-0 overflow-hidden"
-                                    gradient={project.isNew}
                                     gradientSize={300}
                                     gradientColor={project.isNew ? "#FF8A0020" : "#9E7AFF20"}
                                     gradientFrom={project.isNew ? "#FF8A00" : "#9E7AFF"}
@@ -298,17 +298,17 @@ const HackathonAIInnovations = () => {
                                                 <div className="flex flex-wrap gap-4">
                                                     {project.demoLink && project.demoLink !== "#" && (
                                                         <Link href={project.demoLink} className="flex items-center text-red-600 hover:text-red-800 text-sm font-medium transition-colors">
-                                                            <FaYoutube className="mr-1" /> Demo
+                                                            <Play className="mr-1 w-4 h-4" /> Demo
                                                         </Link>
                                                     )}
                                                     {project.codeLink && project.codeLink !== "#" && (
                                                         <Link href={project.codeLink} className="flex items-center text-gray-700 hover:text-black text-sm font-medium transition-colors">
-                                                            <FaGithub className="mr-1" /> Code
+                                                            <Github className="mr-1 w-4 h-4" /> Code
                                                         </Link>
                                                     )}
                                                     {project.articleLink && project.articleLink !== "#" && (
                                                         <Link href={project.articleLink} className="flex items-center text-amber-600 hover:text-amber-800 text-sm font-medium transition-colors">
-                                                            <FaBook className="mr-1" /> Article
+                                                            <BookOpen className="mr-1 w-4 h-4" /> Article
                                                         </Link>
                                                     )}
                                                 </div>

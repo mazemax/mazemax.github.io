@@ -195,7 +195,7 @@ export default function ServicesSection() {
                             onClick={() => window.location.href = calendlyLink}
                             className="inline-flex items-center gap-2 px-6 py-3 border-2 border-purple-600 text-purple-600 font-semibold rounded-lg hover:bg-purple-50 transition-colors"
                         >
-                            Let's Discuss Your Project
+                            Let&apos;s Discuss Your Project
                             <ArrowRight className="w-4 h-4" />
                         </button>
                     </div>

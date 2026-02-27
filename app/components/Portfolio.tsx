@@ -221,7 +221,7 @@ const Portfolio = forwardRef<HTMLDivElement, PortfolioProps>((props, ref) => {
 
                 {/* CTA */}
                 <BlurFade delay={0.6} duration={0.5} inView={true} inViewMargin="-100px">
-                    <div className="text-center mt-12">
+                    <div className="flex justify-center mt-12">
                         <ShimmerButton
                             onClick={handleDownloadCV}
                             className="text-base px-8 py-3 shadow-lg"

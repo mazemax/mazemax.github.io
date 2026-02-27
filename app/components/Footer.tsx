@@ -113,7 +113,7 @@ export default function Footer() {
                                         aria-label="LinkedIn Profile"
                                         className="p-3 bg-white/80 hover:bg-white border border-gray-200/60 rounded-lg transition-all duration-300 hover:scale-110 hover:border-purple-400/50"
                                     >
-                                        <FaLinkedin className="w-5 h-5 text-purple-600 hover:text-purple-700" />
+                                        {(FaLinkedin as any)({ className: "w-5 h-5 text-purple-600 hover:text-purple-700" })}
                                     </a>
                                     <a 
                                         href={githubLink} 
@@ -122,7 +122,7 @@ export default function Footer() {
                                         aria-label="GitHub Profile"
                                         className="p-3 bg-white/80 hover:bg-white border border-gray-200/60 rounded-lg transition-all duration-300 hover:scale-110 hover:border-orange-400/50"
                                     >
-                                        <FaGithub className="w-5 h-5 text-orange-600 hover:text-orange-700" />
+                                        {(FaGithub as any)({ className: "w-5 h-5 text-orange-600 hover:text-orange-700" })}
                                     </a>
                                 </div>
                             </div>

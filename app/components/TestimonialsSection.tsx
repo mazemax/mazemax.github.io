@@ -12,6 +12,7 @@ import { linkedinLink } from '@/app/data/links'
 import { ShineBorder } from '@/components/ui/shine-border'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { TextAnimate } from '@/components/ui/text-animate'
+import type { IconType } from 'react-icons';
 
 // Import Swiper styles
 import 'swiper/css'
@@ -185,7 +186,7 @@ export default function TestimonialsSection() {
                     <div className="mt-12 text-center">
                         <Button asChild className="bg-[#0077b5] hover:bg-[#005582] text-white">
                             <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                                <SiLinkedin className="mr-2 h-4 w-4" />
+                                <span className="mr-2">{(SiLinkedin as IconType)({ className: "h-4 w-4" })}</span>
                                 Explore My Full Recommendations
                             </a>
                         </Button>
@@ -226,7 +227,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
                         rel="noopener noreferrer"
                         className="flex items-center text-[#0077b5] hover:underline"
                     >
-                        <SiLinkedin className="mr-2 h-4 w-4" />
+                        <span className="mr-2">{(SiLinkedin as IconType)({ className: "h-4 w-4" })}</span>
                         View on LinkedIn
                     </a>
                 </CardContent>

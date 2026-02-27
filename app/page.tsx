@@ -8,7 +8,6 @@ import {
   CarTwoTone, MessageTwoTone, MenuFoldOutlined, MenuUnfoldOutlined, DownloadOutlined,
   BulbOutlined, CalendarOutlined, TrophyOutlined, StarOutlined, RocketOutlined, ToolOutlined
 } from '@ant-design/icons'
-import Portfolio from './components/Portfolio'
 import HackathonAIInnovations from './components/HackathonAIInnovations'
 import Featured from './components/Featured'
 import HeroSectionNew from './components/HeroSectionNew'
@@ -29,7 +28,6 @@ import './styles/my-skills-section.css'
 export default function Home() {
   const [open, setOpen] = useState(false)
   const [showHeaderCTA, setShowHeaderCTA] = useState(false)
-  const viewPortfolioRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -170,13 +168,13 @@ export default function Home() {
               <Content style={{ padding: '0 0', minHeight: 280 }}>
                 {/* Hero Section */}
                 <span id="contact"></span>
-                <HeroSectionNew portfolioRef={viewPortfolioRef} />
+                <HeroSectionNew />
                 
-                {/* Portfolio/Case Studies Section - MOVED UP to #2 for immediate proof */}
-                <span id="portfolio"></span>
-                <Portfolio ref={viewPortfolioRef} />
+                {/* Hackathon & AI Innovations - Innovation showcase */}
+                <span id="hackathon"></span>
+                <HackathonAIInnovations />
 
-                {/* Featured Video - MOVED UP to #3 for third-party credibility */}
+                {/* Featured Video - third-party credibility */}
                 <span id="featured"></span>
                 <Featured />
 
@@ -204,10 +202,6 @@ export default function Home() {
                 <span id="skills"></span>
                 <MySkills/>
 
-                {/* Hackathon & AI Innovations - Innovation showcase */}
-                <span id="hackathon"></span>
-                <HackathonAIInnovations />
-                
               </Content>
             </Layout>
           </Content>

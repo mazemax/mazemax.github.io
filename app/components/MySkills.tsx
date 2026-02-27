@@ -57,7 +57,12 @@ export default function MySkills() {
         filteredSkills.filter((skill) => skill.category === 'technical' && skill.subcategory === subcategory)
 
     const renderSkill = (skill: Skill) => {
-        const IconComponent = React.createElement(skill.icon, { className: "text-3xl" });
+        let IconComponent: React.ReactNode;
+        if (typeof skill.icon === 'function' || typeof skill.icon === 'object') {
+            IconComponent = React.createElement(skill.icon as React.ElementType, { className: "text-3xl" });
+        } else {
+            IconComponent = skill.icon;
+        }
         return (
             <div
                 key={skill.name}

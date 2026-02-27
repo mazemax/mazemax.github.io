@@ -383,7 +383,6 @@ const TextAnimateBase = ({
 
   return (
     <AnimatePresence mode="popLayout">
-      {/* @ts-expect-error - Motion component types */}
       <MotionComponent
         variants={finalVariants.container as Variants}
         initial="hidden"

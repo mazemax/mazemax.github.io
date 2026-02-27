@@ -16,7 +16,7 @@ import { Meteors } from '@/components/ui/meteors'
 import { ShineBorder } from '@/components/ui/shine-border'
 
 const FeaturedHackathonCard = ({ achievement }: { achievement: Achievement }) => {
-    const Icon = achievement.icon
+    const Icon = achievement.icon as React.ElementType
     
     return (
         <BlurFade delay={0.2} duration={0.5} inView={true} inViewMargin="-100px">
@@ -104,7 +104,7 @@ const FeaturedHackathonCard = ({ achievement }: { achievement: Achievement }) =>
 }
 
 const StandardAchievementCard = ({ achievement, index, type }: { achievement: Achievement, index: number, type: 'hackathon' | 'certification' }) => {
-    const Icon = achievement.icon
+    const Icon = achievement.icon as React.ElementType
     
     const handleViewCredential = () => {
         if (achievement.credentialUrl) {

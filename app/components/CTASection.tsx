@@ -104,7 +104,7 @@ const CTASection = () => {
                 </button>
 
                 <p className="text-xs text-gray-500 mt-3 text-center">
-                    Don't Miss Out on Top Talent
+                    Don&apos;t Miss Out on Top Talent
                 </p>
             </div>
         </div>

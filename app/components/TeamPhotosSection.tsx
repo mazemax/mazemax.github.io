@@ -65,7 +65,7 @@ export default function TeamPhotosSection() {
                     Thriving Together: Moments of Collaboration and Success
                 </h2>
                 <p className="mx-auto max-w-[700px] text-lg md:text-xl text-gray-600 text-center mb-8">
-                    A snapshot of the incredible teams I've had the privilege to work with. Great results come from strong collaboration.
+                    A snapshot of the incredible teams I&apos;ve had the privilege to work with. Great results come from strong collaboration.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     {photos.map((photo, index) => (
