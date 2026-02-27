@@ -43,7 +43,7 @@ export default function HeroSection({portfolioRef}: HeroSectionProps) {
             <div className="w-full lg:w-1/2 flex flex-col justify-center items-center p-8 lg:p-16 z-10">
                 <h1 className="hero-headline text-4xl md:text-5xl lg:text-6xl font-bold text-center lg:text-left mb-6">
           <span className="bg-gradient-to-r from-purple-700 to-orange-500 text-transparent bg-clip-text">
-            Unlock Your Team's Potential
+            Unlock Your Team&apos;s Potential
           </span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 text-center lg:text-left mb-8">

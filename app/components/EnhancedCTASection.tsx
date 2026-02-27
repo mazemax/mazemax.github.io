@@ -1,25 +1,29 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { 
-    Calendar, 
-    MessageCircle, 
-    Download, 
-    Star, 
-    Clock, 
-    ArrowRight, 
+import React from 'react'
+import {
+    Calendar,
+    MessageCircle,
+    Download,
+    Star,
     CheckCircle,
-    Zap,
-    Target,
-    TrendingUp,
-    Users,
-    Award,
-    LucideIcon
+    ArrowRight,
+    Sparkles
 } from 'lucide-react'
 import { whatsAppLink, resumeLink, calendlyLink } from '@/app/data/links'
+import { NeonGradientCard } from '@/components/ui/neon-gradient-card'
+import { RainbowButton } from '@/components/ui/rainbow-button'
+import { SparklesText } from '@/components/ui/sparkles-text'
+import { BlurFade } from '@/components/ui/blur-fade'
+import { NumberTicker } from '@/components/ui/number-ticker'
+import { WarpBackground } from '@/components/ui/warp-background'
+import { ShimmerButton } from '@/components/ui/shimmer-button'
+import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button'
+import { Marquee } from '@/components/ui/marquee'
+import Image from 'next/image'
+import MVLogo from 'public/org/mindvalley_logo.jpeg'
+import REALogo from 'public/org/rea_group_logo.jpeg'
+import IPGLogo from 'public/org/mediabrands_logo.jpeg'
 
 interface CTAOption {
     id: string
@@ -28,35 +32,14 @@ interface CTAOption {
     description: string
     icon: any
     action: () => void
-    variant: 'default' | 'secondary' | 'outline' | 'ghost' | 'link' | 'destructive'
-    urgency?: string
-    benefits?: string[]
+    isPrimary?: boolean
+    benefits: string[]
     buttonText: string
-    color: string
+    neonFirst: string
+    neonSecond: string
 }
 
 export default function EnhancedCTASection() {
-    const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 })
-
-    // Countdown timer effect
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(prev => {
-                if (prev.seconds > 0) {
-                    return { ...prev, seconds: prev.seconds - 1 }
-                } else if (prev.minutes > 0) {
-                    return { hours: prev.hours, minutes: prev.minutes - 1, seconds: 59 }
-                } else if (prev.hours > 0) {
-                    return { hours: prev.hours - 1, minutes: 59, seconds: 59 }
-                } else {
-                    return { hours: 23, minutes: 59, seconds: 59 } // Reset
-                }
-            })
-        }, 1000)
-
-        return () => clearInterval(timer)
-    }, [])
-
     const handleScheduleCall = () => {
         (window as any)?.gtag('event', 'cta_schedule_call', {
             event_label: "Schedule Call CTA - Enhanced Section"
@@ -81,171 +64,193 @@ export default function EnhancedCTASection() {
     const ctaOptions: CTAOption[] = [
         {
             id: 'strategy-call',
-            title: 'AI Strategy Call',
-            subtitle: 'For Decision Makers',
-            description: '30-min consultation to discuss your AI implementation needs and roadmap',
+            title: 'Book Strategy Call',
+            subtitle: 'For Executives & Decision Makers',
+            description: '30-min consultation to discuss your AI implementation roadmap',
             icon: Calendar,
             action: handleScheduleCall,
-            variant: 'default',
-            urgency: 'Limited slots available',
+            isPrimary: true,
             benefits: ['Personalized AI roadmap', 'Technology recommendations', 'Implementation timeline'],
             buttonText: 'Book Strategy Call',
-            color: 'from-purple-600 to-blue-600'
+            neonFirst: '#9333ea',
+            neonSecond: '#f97316',
         },
         {
             id: 'quick-chat',
-            title: 'Quick Discussion',
+            title: 'Start a Conversation',
             subtitle: 'For Technical Teams',
-            description: 'Immediate response for technical questions and project feasibility',
+            description: 'Instant response for technical questions and feasibility',
             icon: MessageCircle,
             action: handleQuickChat,
-            variant: 'secondary',
+            isPrimary: false,
             benefits: ['Instant technical insights', 'Project feasibility', 'Technology stack advice'],
             buttonText: 'Chat Now',
-            color: 'from-green-500 to-teal-500'
+            neonFirst: '#22c55e',
+            neonSecond: '#06b6d4',
         },
         {
-            id: 'exclusive-cv',
-            title: 'Exclusive Resume',
+            id: 'download-cv',
+            title: 'Download Resume',
             subtitle: 'For Recruiters & HRs',
-            description: 'CV with projects, education and work history',
+            description: 'Comprehensive CV with projects, education, and history',
             icon: Download,
             action: handleDownloadCV,
-            variant: 'outline',
-            urgency: `Expires in ${timeLeft.hours}:${timeLeft.minutes.toString().padStart(2, '0')}:${timeLeft.seconds.toString().padStart(2, '0')}`,
-            benefits: ['Detailed core competencies', 'Technical achievements', 'Professional career insights'],
-            buttonText: 'Download CV',
-            color: 'from-orange-500 to-red-500'
+            isPrimary: false,
+            benefits: ['Core competencies', 'Technical achievements', 'Career insights'],
+            buttonText: 'Download Resume',
+            neonFirst: '#f97316',
+            neonSecond: '#ef4444',
         }
     ]
 
+    const logos = [
+        { src: MVLogo, name: 'Mindvalley' },
+        { src: REALogo, name: 'REA Group' },
+        { src: IPGLogo, name: 'IPG Mediabrands' },
+    ]
+
     return (
-        <section className="py-20 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[url('/api/placeholder/100/100')] opacity-5"></div>
-            
-            <div className="max-w-7xl mx-auto px-4 relative z-10">
-                {/* Main Heading */}
-                <div className="text-center mb-16">
-                    <Badge className="mb-4 bg-yellow-100 text-yellow-800 text-sm font-semibold px-4 py-2">
-                        <Star className="w-4 h-4 mr-2" />
-                        Award-Winning AI Solutions Engineer
-                    </Badge>
-                    
-                    <h2 className="text-5xl md:text-6xl font-bold mb-6">
-                        <span className="bg-gradient-to-r from-yellow-300 to-orange-300 text-transparent bg-clip-text">
-                            Ready to Transform
-                        </span>
-                        <br />
-                        <span className="text-white">Your Business with AI?</span>
-                    </h2>
-                    
-                    <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto mb-8">
-                        Join the companies that achieved <span className="font-bold text-yellow-300">$19M+ in revenue growth</span> 
-                        &nbsp;with<br className="hidden md:block"/> AI-powered solutions
-                    </p>
+        <section id="contact" className="relative py-24 overflow-hidden">
+            {/* Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(147,51,234,0.15),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(249,115,22,0.1),transparent_50%)]" />
 
-                    {/* Social Proof Stats */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-yellow-300">10+</div>
-                            <div className="text-purple-200">AI Agents Built</div>
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header */}
+                <BlurFade delay={0.1} duration={0.5} inView={true} inViewMargin="-100px">
+                    <div className="text-center mb-16">
+                        <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-6">
+                            <Star className="w-4 h-4 text-amber-400" />
+                            <span className="text-amber-300 text-sm font-semibold">Award-Winning AI Solutions Engineer</span>
                         </div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-yellow-300">$19M+</div>
-                            <div className="text-purple-200">Revenue Driven</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-yellow-300">1,000+</div>
-                            <div className="text-purple-200">Users Served</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-yellow-300">1st Place</div>
-                            <div className="text-purple-200">AI Hackathon</div>
-                        </div>
+
+                        <h2 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                            <span className="text-white">Ready to </span>
+                            <SparklesText
+                                className="text-4xl md:text-6xl [&_strong]:text-amber-400"
+                                colors={{ first: "#f59e0b", second: "#f97316" }}
+                                sparklesCount={8}
+                            >
+                                Transform
+                            </SparklesText>
+                            <br />
+                            <span className="text-white">Your Business with AI?</span>
+                        </h2>
+
+                        <p className="text-lg md:text-xl text-purple-200/80 max-w-2xl mx-auto">
+                            Join the companies that achieved{' '}
+                            <span className="font-bold text-amber-300">
+                                $<NumberTicker value={19} className="text-amber-300" />M+ in revenue growth
+                            </span>{' '}
+                            with AI-powered solutions
+                        </p>
                     </div>
-                </div>
+                </BlurFade>
 
-                {/* CTA Options Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                {ctaOptions.map((option) => {
+                {/* CTA Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    {ctaOptions.map((option, index) => {
                         const Icon = option.icon
                         return (
-                            <Card key={option.id} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                                <CardContent className="p-8 text-center">
-                                    <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${option.color} flex items-center justify-center`}>
-                                        <Icon className="w-8 h-8 text-white" />
-                                    </div>
-                                    
-                                    <h3 className="text-2xl font-bold mb-2">{option.title}</h3>
-                                    <p className="text-purple-200 text-sm mb-4">{option.subtitle}</p>
-                                    <p className="text-purple-100 mb-6">{option.description}</p>
-
-                                    {option.urgency && (
-                                        <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-3 mb-4">
-                                            <div className="flex items-center justify-center text-red-300 text-sm">
-                                                <Clock className="w-4 h-4 mr-2" />
-                                                {option.urgency}
+                            <BlurFade
+                                key={option.id}
+                                delay={0.2 + index * 0.1}
+                                duration={0.5}
+                                inView={true}
+                                inViewMargin="-100px"
+                            >
+                                <NeonGradientCard
+                                    neonColors={{ firstColor: option.neonFirst, secondColor: option.neonSecond }}
+                                    borderSize={2}
+                                    borderRadius={16}
+                                    className="h-full"
+                                >
+                                    <div className="flex flex-col h-full">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="p-3 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10">
+                                                <Icon className="w-6 h-6 text-gray-700" />
+                                            </div>
+                                            <div>
+                                                <h3 className="text-xl font-bold text-gray-900">{option.title}</h3>
+                                                <p className="text-xs font-medium text-purple-600">{option.subtitle}</p>
                                             </div>
                                         </div>
-                                    )}
 
-                                    {option.benefits && (
-                                        <div className="text-left mb-6">
-                                            <p className="text-sm font-semibold text-purple-200 mb-2">You'll get:</p>
-                                            <ul className="text-sm text-purple-100 space-y-1">
-                                                {option.benefits.map((benefit, index) => (
-                                                    <li key={index} className="flex items-center">
-                                                        <CheckCircle className="w-4 h-4 text-green-400 mr-2 flex-shrink-0" />
+                                        <p className="text-sm text-gray-600 mb-5">{option.description}</p>
+
+                                        <div className="flex-grow mb-5">
+                                            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">What you get:</p>
+                                            <ul className="space-y-2">
+                                                {option.benefits.map((benefit, idx) => (
+                                                    <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                                                         {benefit}
                                                     </li>
                                                 ))}
                                             </ul>
                                         </div>
-                                    )}
 
-                                    <Button
-                                        onClick={option.action}
-                                        variant={option.variant}
-                                        size="lg"
-                                        className={`w-full font-semibold py-3 ${
-                                            option.variant === 'default'
-                                                ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 hover:from-yellow-500 hover:to-orange-500' 
-                                                : option.variant === 'secondary'
-                                                ? 'bg-white/20 text-white border-white/30 hover:bg-white/30'
-                                                : option.variant === 'outline'
-                                                ? 'border-2 border-white/50 text-white bg-transparent hover:bg-white/10 hover:text-white'
-                                                : 'border-2 border-white/50 text-white hover:bg-white/10'
-                                        }`}
-                                    >
-                                        {option.buttonText}
-                                        <ArrowRight className="ml-2 w-5 h-5" />
-                                    </Button>
-                                </CardContent>
-                            </Card>
+                                        {option.isPrimary ? (
+                                            <RainbowButton
+                                                onClick={option.action}
+                                                className="w-full py-3"
+                                                size="lg"
+                                            >
+                                                <span className="flex items-center justify-center gap-2 font-semibold">
+                                                    {option.buttonText}
+                                                    <ArrowRight className="w-4 h-4" />
+                                                </span>
+                                            </RainbowButton>
+                                        ) : (
+                                            <ShimmerButton
+                                                onClick={option.action}
+                                                className="w-full py-3 font-semibold"
+                                                shimmerColor="#9333ea"
+                                                shimmerSize="0.08em"
+                                                shimmerDuration="3s"
+                                                borderRadius="8px"
+                                                background="rgba(0,0,0,0.9)"
+                                            >
+                                                <span className="flex items-center justify-center gap-2">
+                                                    {option.buttonText}
+                                                    <ArrowRight className="w-4 h-4" />
+                                                </span>
+                                            </ShimmerButton>
+                                        )}
+                                    </div>
+                                </NeonGradientCard>
+                            </BlurFade>
                         )
                     })}
                 </div>
 
-                {/* Trust Signals */}
-                <div className="text-center">
-                    <p className="text-purple-200 mb-4">Trusted by global technology leaders</p>
-                    <div className="flex justify-center items-center space-x-8 opacity-60">
-                        <div className="text-2xl font-bold">Mindvalley</div>
-                        <div className="text-2xl font-bold">REA Group</div>
-                        <div className="text-2xl font-bold">IPG Mediabrands</div>
+                {/* Trust Logos */}
+                <BlurFade delay={0.5} duration={0.5} inView={true} inViewMargin="-100px">
+                    <div className="text-center">
+                        <p className="text-sm text-purple-300/60 uppercase tracking-widest mb-6 font-medium">Trusted by global technology leaders</p>
+                        <div className="flex justify-center items-center gap-10 opacity-60">
+                            {logos.map((logo, i) => (
+                                <div key={i} className="flex items-center gap-2">
+                                    <Image src={logo.src} alt={logo.name} width={36} height={36} className="rounded-lg" />
+                                    <span className="text-sm font-semibold text-white/70">{logo.name}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </BlurFade>
 
                 {/* Bottom Guarantee */}
-                <div className="mt-12 text-center">
-                    <div className="inline-flex items-center bg-green-500/20 border border-green-400/30 rounded-full px-6 py-3">
-                        <Award className="w-5 h-5 text-green-400 mr-2" />
-                        <span className="text-green-300 font-semibold">
-                            100% Satisfaction Guaranteed • Award-Winning Results
-                        </span>
+                <BlurFade delay={0.6} duration={0.5} inView={true} inViewMargin="-100px">
+                    <div className="mt-12 text-center">
+                        <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-400/20 backdrop-blur-sm rounded-full px-6 py-3">
+                            <Sparkles className="w-4 h-4 text-emerald-400" />
+                            <span className="text-emerald-300 font-semibold text-sm">
+                                100% Satisfaction Guaranteed  &middot;  Award-Winning Results
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </BlurFade>
             </div>
         </section>
     )

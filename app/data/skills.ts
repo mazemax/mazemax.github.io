@@ -1,10 +1,9 @@
-import { FaJs, FaReact, FaNode, FaAws, FaDocker, FaSass, FaTrophy, FaUserCog } from 'react-icons/fa';
-import { SiTypescript, SiVuedotjs, SiNuxtdotjs, SiNextdotjs, SiExpress, SiTailwindcss, SiStoryblok, SiWebpack, SiJest, SiCypress, SiGithub, SiGraphql, SiRedux, SiPython, SiPhp, SiStyledcomponents, SiGooglecloud, SiDigitalocean, SiPostgresql, SiMysql, SiElasticsearch, SiMongodb, SiJenkins, SiBuildkite, SiWordpress, SiLaravel, SiSymfony, SiApache, SiEnvoyproxy, SiSencha, SiBootstrap, SiApachecordova, SiAntdesign, SiFigma, SiLangchain, SiOpenai } from 'react-icons/si';
+import { FaJs, FaReact, FaNode, FaAws, FaDocker, FaSass, FaTrophy, FaUserCog, FaRobot, FaBrain, FaFire, FaGem, FaBook, FaCheckCircle } from 'react-icons/fa';
+import { SiTypescript, SiVuedotjs, SiNuxtdotjs, SiNextdotjs, SiExpress, SiTailwindcss, SiStoryblok, SiWebpack, SiJest, SiCypress, SiGithub, SiGraphql, SiRedux, SiPython, SiPhp, SiStyledcomponents, SiGooglecloud, SiDigitalocean, SiPostgresql, SiMysql, SiElasticsearch, SiMongodb, SiJenkins, SiBuildkite, SiWordpress, SiLaravel, SiSymfony, SiApache, SiEnvoyproxy, SiSencha, SiBootstrap, SiApachecordova, SiAntdesign, SiFigma, SiLangchain, SiOpenai, SiAnthropic, SiFastapi, SiSupabase, SiVercel, SiGithubactions, SiGooglebigquery, SiLightning } from 'react-icons/si';
 import { MdOutlineCrisisAlert, MdOutlineEmojiEmotions } from "react-icons/md";
 import { GiTeamUpgrade, GiPuzzle, GiRead } from 'react-icons/gi';
 import { BiMessageRoundedDetail } from 'react-icons/bi';
-import { RiUserVoiceFill } from 'react-icons/ri';
-import { FaRobot } from "react-icons/fa6";
+import { RiUserVoiceFill, RiGeminiLine } from 'react-icons/ri';
 import { GrDocumentStore } from "react-icons/gr";
 import { DiRedis } from "react-icons/di";
 import { TbBrandGoogleBigQuery } from "react-icons/tb";
@@ -29,6 +28,14 @@ export const skills: Skill[] = [
     { name: 'LangGraph', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiLangchain },
     { name: 'LangChain', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiLangchain },
     { name: 'OpenAI', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiOpenai },
+    { name: 'LlamaIndex', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiLangchain },
+    { name: 'CrewAI', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: FaBrain },
+    { name: 'Vercel AI SDK', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiVercel },
+    { name: 'Claude 4.6', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiAnthropic },
+    { name: 'Gemini 3', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: RiGeminiLine },
+    { name: 'MCP', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: FaBrain },
+    { name: 'Firecrawl', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: FaFire },
+    { name: 'Replicate', category: 'technical', subcategory: 'Artificial Intelligence', proficiency: 50, icon: SiOpenai },
 
     { name: 'JavaScript', category: 'technical', subcategory: 'Frontend', proficiency: 100, icon: FaJs },
     { name: 'TypeScript', category: 'technical', subcategory: 'Frontend', proficiency: 80, icon: SiTypescript },
@@ -40,6 +47,8 @@ export const skills: Skill[] = [
     { name: 'SASS', category: 'technical', subcategory: 'Frontend', proficiency: 100, icon: FaSass },
     { name: 'Sencha ExtJS', category: 'technical', subcategory: 'Frontend', proficiency: 100, icon: SiSencha },
     { name: 'Twitter Bootstrap', category: 'technical', subcategory: 'Frontend', proficiency: 100, icon: SiBootstrap },
+    { name: 'Magic UI', category: 'technical', subcategory: 'Frontend', proficiency: 80, icon: FaRobot },
+    { name: 'Spline 3D', category: 'technical', subcategory: 'Frontend', proficiency: 50, icon: FaRobot },
 
     { name: 'Node.js', category: 'technical', subcategory: 'Backend', proficiency: 100, icon: FaNode },
     { name: 'Express.js', category: 'technical', subcategory: 'Backend', proficiency: 85, icon: SiExpress },
@@ -47,6 +56,8 @@ export const skills: Skill[] = [
     { name: 'PHP', category: 'technical', subcategory: 'Backend', proficiency: 100, icon: SiPhp },
     { name: 'Laravel', category: 'technical', subcategory: 'Backend', proficiency: 100, icon: SiLaravel },
     { name: 'Symfony', category: 'technical', subcategory: 'Backend', proficiency: 80, icon: SiSymfony },
+    { name: 'FastAPI', category: 'technical', subcategory: 'Backend', proficiency: 50, icon: SiFastapi },
+    { name: 'Supabase', category: 'technical', subcategory: 'Backend', proficiency: 80, icon: SiSupabase },
 
     { name: 'PostgreSQL', category: 'technical', subcategory: 'Database', proficiency: 90, icon: SiPostgresql },
     { name: 'Redis', category: 'technical', subcategory: 'Database', proficiency: 90, icon: DiRedis },
@@ -54,6 +65,7 @@ export const skills: Skill[] = [
     { name: 'MySQL', category: 'technical', subcategory: 'Database', proficiency: 100, icon: SiMysql },
     { name: 'Elastic Search', category: 'technical', subcategory: 'Database', proficiency: 70, icon: SiElasticsearch },
     { name: 'MongoDB', category: 'technical', subcategory: 'Database', proficiency: 70, icon: SiMongodb },
+    { name: 'Supabase', category: 'technical', subcategory: 'Database', proficiency: 80, icon: SiSupabase },
 
     { name: 'Android', category: 'technical', subcategory: 'Mobile', proficiency: 60, icon: TfiAndroid },
     { name: 'React Native', category: 'technical', subcategory: 'Mobile', proficiency: 50, icon: FaReact },
@@ -73,11 +85,17 @@ export const skills: Skill[] = [
     { name: 'Ngnix', category: 'technical', subcategory: 'Tools', proficiency: 75, icon: SiEnvoyproxy },
     { name: 'Antd', category: 'technical', subcategory: 'Tools', proficiency: 100, icon: SiAntdesign },
     { name: 'Figma', category: 'technical', subcategory: 'Tools', proficiency: 75, icon: SiFigma },
+    { name: 'Storybook', category: 'technical', subcategory: 'Tools', proficiency: 50, icon: FaBook },
+    { name: 'Vite', category: 'technical', subcategory: 'Tools', proficiency: 50, icon: SiLightning },
+    { name: 'Playwright', category: 'technical', subcategory: 'Tools', proficiency: 100, icon: FaCheckCircle },
 
     { name: 'GCP', category: 'technical', subcategory: 'Cloud Services', proficiency: 50, icon: SiGooglecloud },
     { name: 'AWS', category: 'technical', subcategory: 'Cloud Services', proficiency: 50, icon: FaAws },
     { name: 'Digital Ocean', category: 'technical', subcategory: 'Cloud Services', proficiency: 50, icon: SiDigitalocean },
     { name: 'Docker', category: 'technical', subcategory: 'Cloud Services', proficiency: 75, icon: FaDocker },
+    { name: 'Vercel', category: 'technical', subcategory: 'Cloud Services', proficiency: 80, icon: SiVercel },
+    { name: 'GitHub Actions', category: 'technical', subcategory: 'Cloud Services', proficiency: 80, icon: SiGithubactions },
+    { name: 'Fastly', category: 'technical', subcategory: 'Cloud Services', proficiency: 50, icon: SiGooglecloud },
 
     { name: 'Learning Agility', category: 'soft', proficiency: 90, icon: GiRead },
     { name: 'Leadership', category: 'soft', proficiency: 90, icon: GiTeamUpgrade },
