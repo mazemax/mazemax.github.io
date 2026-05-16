@@ -1,31 +1,17 @@
-/** @type {import('next').NextConfig} */
-// const withExportImages = require('next-export-optimize-images')
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
-const nextConfig = {
+module.exports = (phase) => {
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER
+  return {
     basePath: '',
-    output: 'export',
+    ...(!isDev ? { output: 'export' } : {}),
     compress: true,
     poweredByHeader: false,
-    devIndicators: {
-        buildActivityPosition: 'bottom-right'
-    },
-    env: {
-        customKey: 'my-value'
-    },
-    serverRuntimeConfig: {
-        // Will only be available on the server side
-        mySecret: 'secret'
-    },
-    publicRuntimeConfig: {
-        // Will be available on both server and client
-        publicFolder: '/public'
-    },
     images: {
-        unoptimized: true
+      unoptimized: true
     },
     eslint: {
-        ignoreDuringBuilds: true
+      ignoreDuringBuilds: true
     }
+  }
 }
-
-module.exports = nextConfig
